@@ -64,8 +64,8 @@
 /* Accessibility Toolbar */
 .accessibility-toolbar {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  bottom: 20px;
+  left: 20px;
   z-index: 1000;
   font-family: var(--default-font);
 }
@@ -90,8 +90,8 @@
 
 .accessibility-panel {
   position: absolute;
-  top: 60px;
-  right: 0;
+  bottom: 60px;
+  left: 0;
   background: white;
   border: 2px solid var(--heading-color);
   border-radius: 10px;
@@ -210,8 +210,8 @@ body.accessibility-enhanced li {
 /* Responsive accessibility toolbar */
 @media (max-width: 768px) {
   .accessibility-toolbar {
-    top: 10px;
-    right: 10px;
+    bottom: 10px;
+    left: 10px;
   }
   
   .accessibility-panel {
@@ -1738,6 +1738,92 @@ section,
   .testimonials .testimonial-item .testimonial-img {
     position: static;
     left: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+  padding: 60px 0;
+}
+
+.clients .client-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 23px;
+  transition: 0.3s;
+  height: 223px;
+}
+
+.clients .client-logo img {
+  max-width: 203px;
+  max-height: 162px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: 0.3s;
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+.clients .client-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.clients .client-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 13px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.clients .client-logo:hover .client-name {
+  opacity: 1;
+}
+
+.clients .swiper-wrapper {
+  height: auto;
+  align-items: center;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid var(--accent-color);
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+@media (max-width: 767px) {
+  .clients .client-logo {
+    padding: 21px;
+    height: 183px;
+  }
+  
+  .clients .client-logo img {
+    max-width: 162px;
+    max-height: 122px;
+  }
+  
+  .clients .client-name {
+    font-size: 14px;
   }
 }
 
