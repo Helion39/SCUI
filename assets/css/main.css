@@ -89,51 +89,77 @@
 }
 
 .accessibility-panel {
-  position: absolute;
-  bottom: 60px;
-  left: 0;
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 300px;
+  height: 100vh;
   background: white;
-  border: 2px solid var(--heading-color);
-  border-radius: 10px;
-  padding: 20px;
-  min-width: 250px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
-  display: none;
+  border-right: 3px solid var(--heading-color);
+  padding: 80px 20px 20px 20px;
+  box-shadow: 3px 0 15px rgba(0,0,0,0.2);
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  z-index: 999;
 }
 
 .accessibility-panel.show {
-  display: block;
+  left: 0;
 }
 
 .accessibility-panel h4 {
   color: var(--heading-color);
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.accessibility-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--heading-color);
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+}
+
+.accessibility-close:hover {
+  color: var(--accent-color);
 }
 
 .accessibility-controls {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .accessibility-controls .btn {
-  font-size: 12px;
-  padding: 8px 12px;
-  border-color: var(--heading-color);
-  color: var(--heading-color);
+  font-size: 14px;
+  padding: 12px 16px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  background: transparent;
+  text-align: center;
+  border-radius: 0;
+  transition: all 0.3s ease;
 }
 
 .accessibility-controls .btn:hover {
-  background: var(--heading-color);
-  border-color: var(--heading-color);
-  color: white;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-1px);
 }
 
 .accessibility-controls .btn.active {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
-  color: white;
+  background: var(--heading-color);
+  border-color: var(--heading-color);
+  color: var(--contrast-color);
 }
 
 /* Dyslexia-Friendly Features */
@@ -144,6 +170,78 @@
 .dyslexic-font h1, .dyslexic-font h2, .dyslexic-font h3, 
 .dyslexic-font h4, .dyslexic-font h5, .dyslexic-font h6 {
   font-family: 'OpenDyslexic', Arial, sans-serif !important;
+}
+
+/* Selective Text Sizing - Only affects content text, not titles/buttons */
+.custom-text-sizing p,
+.custom-text-sizing li,
+.custom-text-sizing .card-body p,
+.custom-text-sizing .service-item p,
+.custom-text-sizing .post-content p,
+.custom-text-sizing blockquote,
+.custom-text-sizing .icon-box p,
+.custom-text-sizing .php-email-form input::placeholder,
+.custom-text-sizing .php-email-form textarea::placeholder,
+.custom-text-sizing .meta,
+.custom-text-sizing .readmore {
+  font-size: calc(1rem * var(--content-text-size, 100) / 100) !important;
+  line-height: calc(1.6 * var(--content-text-size, 100) / 100) !important;
+}
+
+/* Special handling for card descriptions to prevent overflow */
+.custom-text-sizing .card-body p,
+.custom-text-sizing .service-item p {
+  font-size: calc(0.9rem * var(--content-text-size, 100) / 100) !important;
+  line-height: calc(1.5 * var(--content-text-size, 100) / 100) !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Icon box content scaling */
+.custom-text-sizing .icon-box div p {
+  font-size: calc(0.95rem * var(--content-text-size, 100) / 100) !important;
+  line-height: calc(1.5 * var(--content-text-size, 100) / 100) !important;
+  margin-bottom: calc(0.5rem * var(--content-text-size, 100) / 100);
+}
+
+/* Preserve original sizing for UI elements */
+.custom-text-sizing h1,
+.custom-text-sizing h2,
+.custom-text-sizing h3,
+.custom-text-sizing h4,
+.custom-text-sizing h5,
+.custom-text-sizing h6,
+.custom-text-sizing .btn,
+.custom-text-sizing button,
+.custom-text-sizing .nav-link,
+.custom-text-sizing .navbar-brand,
+.custom-text-sizing .sitename,
+.custom-text-sizing .footer-links,
+.custom-text-sizing .card-title,
+.custom-text-sizing .section-title h2,
+.custom-text-sizing .widget-title,
+.custom-text-sizing .post-title,
+.custom-text-sizing .client-name {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* Ensure containers can handle text scaling */
+.custom-text-sizing .card-item,
+.custom-text-sizing .service-item,
+.custom-text-sizing .icon-box {
+  overflow: visible;
+  min-height: auto;
+}
+
+/* Prevent text overflow in cards */
+.custom-text-sizing .card-body,
+.custom-text-sizing .service-item,
+.custom-text-sizing .icon-box div {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .large-text {
@@ -215,12 +313,19 @@ body.accessibility-enhanced li {
   }
   
   .accessibility-panel {
-    min-width: 200px;
-    padding: 15px;
+    width: 280px;
+    left: -300px;
+    padding: 70px 15px 15px 15px;
   }
   
-  .accessibility-controls {
-    grid-template-columns: 1fr;
+  .accessibility-panel.show {
+    left: 0;
+  }
+  
+  .accessibility-controls .btn {
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 0;
   }
 }
 
@@ -902,7 +1007,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 700;
   position: relative;
 }
@@ -926,6 +1031,19 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+}
+
+/* Responsive section title sizing */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -48,6 +48,9 @@
       <i class="bi bi-universal-access"></i>
     </button>
     <div id="accessibility-panel" class="accessibility-panel">
+      <button id="accessibility-close" class="accessibility-close" aria-label="Close Accessibility Panel">
+        <i class="bi bi-x"></i>
+      </button>
       <h4>Accessibility Options</h4>
       <div class="accessibility-controls">
         <button id="dyslexic-font" class="btn btn-sm btn-outline-primary">Dyslexia Font</button>
@@ -1042,6 +1045,7 @@
       // Accessibility toolbar functionality
       const accessibilityToggle = document.getElementById('accessibility-toggle');
       const accessibilityPanel = document.getElementById('accessibility-panel');
+      const accessibilityClose = document.getElementById('accessibility-close');
       const dyslexicFontBtn = document.getElementById('dyslexic-font');
       const increaseTextBtn = document.getElementById('increase-text');
       const decreaseTextBtn = document.getElementById('decrease-text');
@@ -1054,6 +1058,11 @@
       // Toggle accessibility panel
       accessibilityToggle.addEventListener('click', function() {
         accessibilityPanel.classList.toggle('show');
+      });
+      
+      // Close accessibility panel
+      accessibilityClose.addEventListener('click', function() {
+        accessibilityPanel.classList.remove('show');
       });
       
       // Close panel when clicking outside
@@ -1070,11 +1079,12 @@
         localStorage.setItem('dyslexic-font', document.body.classList.contains('dyslexic-font'));
       });
       
-      // Text size controls
+      // Text size controls - 10% increments for more noticeable changes, targeting only content text
       increaseTextBtn.addEventListener('click', function() {
         textSize += 10;
         if (textSize <= 150) {
-          document.body.style.fontSize = textSize + '%';
+          document.documentElement.style.setProperty('--content-text-size', textSize);
+          document.body.classList.add('custom-text-sizing');
           localStorage.setItem('text-size', textSize);
         } else {
           textSize = 150;
@@ -1084,7 +1094,8 @@
       decreaseTextBtn.addEventListener('click', function() {
         textSize -= 10;
         if (textSize >= 80) {
-          document.body.style.fontSize = textSize + '%';
+          document.documentElement.style.setProperty('--content-text-size', textSize);
+          document.body.classList.add('custom-text-sizing');
           localStorage.setItem('text-size', textSize);
         } else {
           textSize = 80;
@@ -1127,8 +1138,8 @@
       
       // Reset all accessibility features
       resetBtn.addEventListener('click', function() {
-        document.body.classList.remove('dyslexic-font', 'high-contrast');
-        document.body.style.fontSize = '';
+        document.body.classList.remove('dyslexic-font', 'high-contrast', 'custom-text-sizing');
+        document.documentElement.style.removeProperty('--content-text-size');
         if (readingGuide) {
           readingGuide.classList.remove('active');
           document.removeEventListener('mousemove', updateReadingGuide);
@@ -1162,7 +1173,8 @@
       const savedTextSize = localStorage.getItem('text-size');
       if (savedTextSize) {
         textSize = parseInt(savedTextSize);
-        document.body.style.fontSize = textSize + '%';
+        document.documentElement.style.setProperty('--content-text-size', textSize);
+        document.body.classList.add('custom-text-sizing');
       }
       
       if (localStorage.getItem('reading-guide') === 'true') {
