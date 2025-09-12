@@ -1,0 +1,127 @@
+{
+  "sitename": "SCUI",
+  "nav": {
+    "beranda": "Inicio",
+    "tentang": "Acerca de Nosotros",
+    "layanan": "Servicios",
+    "proyek": "Proyectos",
+    "berita": "Noticias",
+    "lainnya": "Más",
+    "tim": "Equipo Directivo",
+    "mitra": "Socios y Clientes",
+    "dokumentasi": "Documentación",
+    "visi": "Visión y Misión",
+    "kontak": "Contacto"
+  },
+  "hero": {
+    "title": "Bienvenido a<br>PT. Sinergi Cahaya Utama Indah",
+    "description": "Emprendimiento social para inspirar la colaboración intersectorial y crear un impacto social positivo y prosperidad para las generaciones futuras.",
+    "button": "Saber Más"
+  },
+  "getStarted": {
+    "title": "Filosofía de la Empresa - Sinergia de Rentabilidad y Humanidad",
+    "description1": "PT SCUI mantiene la filosofía de que la gestión de fondos waqf productivos debe dirigirse a crear un crecimiento económico sostenible, manteniendo el valor central de confianza que no debe disminuir.",
+    "description2": "En el camino hacia convertirse en una empresa de capital de riesgo basada en empresa social, SCUI invierte estratégicamente en negocios que no solo prometen retornos financieros, sino que también aportan un impacto social positivo a la sociedad indonesia.",
+    "consultation": {
+      "title": "Obtener Consulta",
+      "subtitle": "Contáctanos para conocer más sobre los servicios disponibles y oportunidades de cooperación."
+    }
+  },
+  "vision": {
+    "title": "Visión"
+  },
+  "mission": {
+    "title": "Misión"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Servicios profesionales que brindamos para apoyar el ecosistema de waqf productivo y el empoderamiento comunitario",
+    "wakaf": {
+      "title": "Gestión de Waqf Productivo",
+      "description": "Gestionar profesionalmente los fondos waqf para aumentar el valor de los activos de manera sostenible sin reducir los fondos waqf principales."
+    },
+    "pemberdayaan": {
+      "title": "Empoderamiento Comunitario",
+      "description": "Programas de empoderamiento como carritos de PYME, perforación de pozos de agua limpia e instalaciones de paneles solares para comunidades."
+    },
+    "kemitraan": {
+      "title": "Asociaciones Estratégicas",
+      "description": "Construir asociaciones con empresas estatales y compañías privadas para proyectos de infraestructura y desarrollo."
+    }
+  },
+  "whatWeDo": {
+    "title": "Lo Que Hacemos",
+    "subtitle": "Tres unidades de negocio principales de PT SCUI en la gestión de fondos waqf productivos",
+    "investment": {
+      "title": "INVERSIÓN",
+      "description": "La unidad de negocio de inversión de PT SCUI se enfoca en gestionar fondos waqf productivos con el objetivo de aumentar el valor de los activos de manera sostenible sin reducir los fondos waqf principales. Mayor inversión actual: PT Kembar Jaya Abadi para trabajo Mecánico Eléctrico en la empresa estatal PT Kereta Api Properti Manajemen (KAPM)."
+    },
+    "services": {
+      "title": "SERVICIOS",
+      "description": "La unidad de negocio de Servicios de PT SCUI proporciona varios servicios profesionales que apoyan las necesidades del ecosistema Lembaga Wakaf Nurul Taqwa (LWNT) y ZIS Indosat y apoya las actividades operativas de otros negocios productivos. SCUI trabaja en varios proyectos de distribución de fondos Zakat, Infaq y Sedaqah de ZIS Indosat para el empoderamiento comunitario."
+    },
+    "trading": {
+      "title": "COMERCIO",
+      "description": "Comercio de bienes estratégicos y commodities para apoyar el crecimiento económico y el empoderamiento comunitario en Indonesia."
+    }
+  },
+  "features": {
+    "title": "Destacados de la Empresa",
+    "subtitle": "Cuatro enfoques principales que hacen de PT SCUI una empresa social líder en gestión de waqf productivo"
+  },
+  "projects": {
+    "title": "Proyectos Más Recientes",
+    "subtitle": "Portafolio de proyectos de inversión, servicio y comercio de PT SCUI en la gestión de fondos waqf productivos"
+  },
+  "clients": {
+    "title": "Clientes y Socios Comerciales",
+    "subtitle": "PT SCUI se enorgullece de trabajar con varios clientes y socios estratégicos en el desarrollo de un ecosistema empresarial sostenible"
+  },
+  "ecosystem": {
+    "title": "Ecosistema de Asociación",
+    "subtitle": "PT SCUI es una parte integral del ecosistema socio-económico en el entorno Indosat que opera con principios de sostenibilidad y empoderamiento"
+  },
+  "blog": {
+    "title": "Últimas Noticias y Artículos",
+    "subtitle": "Mantente actualizado con los últimos desarrollos en proyectos y actividades de SCUI en la gestión de fondos waqf productivos"
+  },
+  "accessibility": {
+    "title": "Opciones de Accesibilidad",
+    "dyslexicFont": "Fuente para Dislexia",
+    "increaseText": "A+",
+    "decreaseText": "A-",
+    "highContrast": "Alto Contraste",
+    "readingGuide": "Guía de Lectura",
+    "language": "Idioma:",
+    "reset": "Restablecer"
+  },
+  "form": {
+    "consultation": {
+      "title": "Obtener Consulta",
+      "subtitle": "Contáctanos para conocer más sobre los servicios disponibles y oportunidades de cooperación.",
+      "namePlaceholder": "Nombre Completo",
+      "emailPlaceholder": "Correo Electrónico",
+      "phonePlaceholder": "Número de Teléfono",
+      "messagePlaceholder": "Tu Mensaje",
+      "submitButton": "Enviar Mensaje",
+      "loading": "Cargando",
+      "successMessage": "Tu mensaje ha sido enviado exitosamente. ¡Gracias!",
+      "errorMessage": "Ocurrió un error al enviar el mensaje"
+    }
+  },
+  "projectsFilter": {
+    "all": "Todos",
+    "investment": "Inversión",
+    "services": "Servicios",
+    "trading": "Comercio",
+    "community": "Comunidad"
+  },
+  "footer": {
+    "description": "PT. Sinergi Cahaya Utama Indah",
+    "location": "Yakarta, Indonesia",
+    "phone": "Teléfono:",
+    "email": "Correo:",
+    "website": "Sitio Web:",
+    "copyright": "Todos los Derechos Reservados"
+  }
+}

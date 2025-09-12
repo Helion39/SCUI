@@ -1,0 +1,144 @@
+{
+  "sitename": "SCUI",
+  "nav": {
+    "beranda": "首页",
+    "tentang": "关于我们",
+    "layanan": "服务",
+    "proyek": "项目",
+    "berita": "新闻",
+    "lainnya": "更多",
+    "tim": "管理团队",
+    "mitra": "合作伙伴与客户",
+    "dokumentasi": "文档",
+    "visi": "愿景与使命",
+    "kontak": "联系我们"
+  },
+  "hero": {
+    "title": "欢迎来到<br>PT. Sinergi Cahaya Utama Indah",
+    "description": "社会企业家精神，激发跨部门合作，为子孙后代创造积极的社会影响和繁荣。",
+    "button": "了解更多"
+  },
+  "getStarted": {
+    "title": "公司理念 - 盈利与人道主义的协同",
+    "description1": "PT SCUI秉承这样的理念：生产性宗教基金的管理必须致力于创造可持续的经济增长，同时保持不可减少的信托核心价值。",
+    "description2": "在成为基于社会企业的风险投资公司的征程中，SCUI战略性地投资于那些不仅承诺财务回报，而且为印尼社会带来积极社会影响的企业。",
+    "consultation": {
+      "title": "获取咨询",
+      "subtitle": "联系我们了解更多可用服务和合作机会。"
+    }
+  },
+  "vision": {
+    "title": "愿景"
+  },
+  "mission": {
+    "title": "使命"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "我们提供的专业服务，支持生产性宗教基金生态系统和社区赋权",
+    "wakaf": {
+      "title": "生产性宗教基金管理",
+      "description": "专业管理宗教基金，在不减少主要宗教基金的情况下可持续地增加资产价值。"
+    },
+    "pemberdayaan": {
+      "title": "社区赋权",
+      "description": "赋权项目，如中小企业推车、清洁水井钻探和社区太阳能板安装。"
+    },
+    "kemitraan": {
+      "title": "战略伙伴关系",
+      "description": "与国有企业和私人公司建立基础设施和发展项目的伙伴关系。"
+    }
+  },
+  "whatWeDo": {
+    "title": "我们的业务",
+    "subtitle": "PT SCUI管理生产性宗教基金的三个主要业务单元",
+    "investment": {
+      "title": "投资",
+      "description": "PT SCUI的投资业务单元专注于管理生产性宗教基金，旨在在不减少主要宗教基金的情况下可持续地增加资产价值。目前最大的投资：PT Kembar Jaya Abadi，负责国有企业PT Kereta Api Properti Manajemen (KAPM)的机电工程。"
+    },
+    "services": {
+      "title": "服务",
+      "description": "PT SCUI的服务业务单元提供各种专业服务，支持Lembaga Wakaf Nurul Taqwa (LWNT)和ZIS Indosat生态系统的需求，并支持其他生产性企业的运营活动。SCUI承担ZIS Indosat的几个天课、捐赠和施舍基金分配项目，用于社区赋权。"
+    },
+    "trading": {
+      "title": "贸易",
+      "description": "战略商品和大宗商品贸易，支持印尼的经济增长和社区赋权。"
+    }
+  },
+  "features": {
+    "title": "公司亮点",
+    "subtitle": "使PT SCUI成为生产性宗教基金管理领先社会企业的四个主要焦点"
+  },
+  "projects": {
+    "title": "最新项目",
+    "subtitle": "PT SCUI在管理生产性宗教基金方面的投资、服务和贸易项目组合"
+  },
+  "clients": {
+    "title": "客户与商业伙伴",
+    "subtitle": "PT SCUI自豪地与各种客户和战略伙伴合作，发展可持续的商业生态系统"
+  },
+  "ecosystem": {
+    "title": "伙伴关系生态系统",
+    "subtitle": "PT SCUI是Indosat环境中社会经济生态系统的重要组成部分，以可持续性和赋权原则运营"
+  },
+  "blog": {
+    "title": "最新新闻与文章",
+    "subtitle": "及时了解SCUI在管理生产性宗教基金方面的项目和活动的最新发展"
+  },
+  "accessibility": {
+    "title": "无障碍选项",
+    "dyslexicFont": "阅读障碍字体",
+    "increaseText": "A+",
+    "decreaseText": "A-",
+    "highContrast": "高对比度",
+    "readingGuide": "阅读指南",
+    "language": "语言：",
+    "reset": "重置"
+  },
+  "form": {
+    "consultation": {
+      "title": "获取咨询",
+      "subtitle": "联系我们了解更多可用服务和合作机会。",
+      "namePlaceholder": "全名",
+      "emailPlaceholder": "邮箱",
+      "phonePlaceholder": "电话号码",
+      "messagePlaceholder": "您的消息",
+      "submitButton": "发送消息",
+      "loading": "加载中",
+      "successMessage": "您的消息已成功发送。谢谢！",
+      "errorMessage": "发送消息时出错"
+    }
+  },
+  "servicesDetails": {
+    "investment": {
+      "title": "投资",
+      "description": "在各个领域进行战略投资，在不减少本金的情况下可持续地增加宗教基金资产价值。",
+      "readMore": "了解更多"
+    },
+    "generalServices": {
+      "title": "综合服务",
+      "description": "支持LWNT和ZIS Indosat生态系统的专业服务，包括社会资金分配和中小企业赋权。",
+      "readMore": "了解更多"
+    },
+    "trading": {
+      "title": "贸易",
+      "description": "战略商品和大宗商品贸易，支持印尼的经济增长和社区赋权。",
+      "readMore": "了解更多"
+    }
+  },
+  "projectsFilter": {
+    "all": "全部",
+    "investment": "投资",
+    "services": "服务",
+    "trading": "贸易",
+    "community": "社区"
+  },
+  "footer": {
+    "description": "PT. Sinergi Cahaya Utama Indah",
+    "location": "雅加达，印度尼西亚",
+    "phone": "电话：",
+    "email": "邮箱：",
+    "website": "网站：",
+    "copyright": "版权所有"
+  }
+}

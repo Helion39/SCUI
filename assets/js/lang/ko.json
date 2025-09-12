@@ -1,0 +1,127 @@
+{
+  "sitename": "SCUI",
+  "nav": {
+    "beranda": "홈",
+    "tentang": "회사 소개",
+    "layanan": "서비스",
+    "proyek": "프로젝트",
+    "berita": "뉴스",
+    "lainnya": "더보기",
+    "tim": "경영진",
+    "mitra": "파트너 & 고객",
+    "dokumentasi": "문서",
+    "visi": "비전 & 미션",
+    "kontak": "연락처"
+  },
+  "hero": {
+    "title": "환영합니다<br>PT. Sinergi Cahaya Utama Indah",
+    "description": "사회적 기업가정신으로 부문 간 협력을 영감하여 미래 세대를 위한 긍정적인 사회적 영향과 번영을 창조합니다.",
+    "button": "자세히 보기"
+  },
+  "getStarted": {
+    "title": "기업 철학 - 수익성과 인도주의의 시너지",
+    "description1": "PT SCUI는 생산적 와크프 자금의 관리가 지속 가능한 경제 성장을 창조하는 데 방향을 맞춰야 하며, 동시에 감소해서는 안 되는 신탁의 핵심 가치를 유지해야 한다는 철학을 가지고 있습니다.",
+    "description2": "사회적 기업 기반 벤처 캐피털 회사가 되는 여정에서 SCUI는 재정적 수익을 약속할 뿐만 아니라 인도네시아 사회에 긍정적인 사회적 영향을 가져다주는 비즈니스에 전략적으로 투자합니다.",
+    "consultation": {
+      "title": "상담 받기",
+      "subtitle": "이용 가능한 서비스와 협력 기회에 대해 더 자세히 알아보려면 연락하세요."
+    }
+  },
+  "vision": {
+    "title": "비전"
+  },
+  "mission": {
+    "title": "미션"
+  },
+  "services": {
+    "title": "우리의 서비스",
+    "subtitle": "생산적 와크프 생태계와 커뮤니티 역량 강화를 지원하기 위해 제공하는 전문 서비스",
+    "wakaf": {
+      "title": "생산적 와크프 관리",
+      "description": "주요 와크프 자금을 줄이지 않으면서 지속 가능한 방식으로 자산 가치를 증가시키기 위해 와크프 자금을 전문적으로 관리합니다."
+    },
+    "pemberdayaan": {
+      "title": "커뮤니티 역량 강화",
+      "description": "중소기업 카트, 깨끗한 물 우물 굴착, 커뮤니티를 위한 태양광 패널 설치와 같은 역량 강화 프로그램."
+    },
+    "kemitraan": {
+      "title": "전략적 파트너십",
+      "description": "인프라 및 개발 프로젝트를 위해 국유 기업 및 민간 회사와의 파트너십 구축."
+    }
+  },
+  "whatWeDo": {
+    "title": "우리가 하는 일",
+    "subtitle": "생산적 와크프 자금 관리에서 PT SCUI의 세 가지 주요 사업 부문",
+    "investment": {
+      "title": "투자",
+      "description": "PT SCUI의 투자 사업 부문은 주요 와크프 자금을 줄이지 않으면서 지속 가능한 방식으로 자산 가치를 증가시키는 것을 목표로 생산적 와크프 자금 관리에 중점을 둡니다. 현재 최대 투자: 국유 기업 PT Kereta Api Properti Manajemen (KAPM)에서의 기계 전기 작업을 위한 PT Kembar Jaya Abadi."
+    },
+    "services": {
+      "title": "서비스",
+      "description": "PT SCUI의 서비스 사업 부문은 Lembaga Wakaf Nurul Taqwa (LWNT) 및 ZIS Indosat 생태계의 요구를 지원하고 다른 생산적 비즈니스의 운영 활동을 지원하는 다양한 전문 서비스를 제공합니다. SCUI는 커뮤니티 역량 강화를 위해 ZIS Indosat의 여러 자카트, 인팍, 세다카 자금 배분 프로젝트에 참여합니다."
+    },
+    "trading": {
+      "title": "무역",
+      "description": "인도네시아의 경제 성장과 커뮤니티 역량 강화를 지원하기 위한 전략적 상품 및 원자재 거래."
+    }
+  },
+  "features": {
+    "title": "기업 특징",
+    "subtitle": "PT SCUI를 생산적 와크프 관리의 선도적인 사회적 기업으로 만드는 네 가지 주요 초점"
+  },
+  "projects": {
+    "title": "최신 프로젝트",
+    "subtitle": "생산적 와크프 자금 관리에서 PT SCUI의 투자, 서비스 및 무역 프로젝트 포트폴리오"
+  },
+  "clients": {
+    "title": "고객 & 비즈니스 파트너",
+    "subtitle": "PT SCUI는 지속 가능한 비즈니스 생태계 개발에서 다양한 고객과 전략적 파트너와 협력하는 것을 자랑스럽게 생각합니다"
+  },
+  "ecosystem": {
+    "title": "파트너십 생태계",
+    "subtitle": "PT SCUI는 지속 가능성과 역량 강화 원칙으로 운영되는 Indosat 환경의 사회 경제 생태계의 필수적인 부분입니다"
+  },
+  "blog": {
+    "title": "최신 뉴스 & 기사",
+    "subtitle": "생산적 와크프 자금 관리에서 SCUI 프로젝트와 활동의 최신 개발 사항을 계속 업데이트하세요"
+  },
+  "accessibility": {
+    "title": "접근성 옵션",
+    "dyslexicFont": "난독증 폰트",
+    "increaseText": "A+",
+    "decreaseText": "A-",
+    "highContrast": "고대비",
+    "readingGuide": "읽기 가이드",
+    "language": "언어:",
+    "reset": "재설정"
+  },
+  "form": {
+    "consultation": {
+      "title": "상담 받기",
+      "subtitle": "이용 가능한 서비스와 협력 기회에 대해 더 자세히 알아보려면 연락하세요.",
+      "namePlaceholder": "전체 이름",
+      "emailPlaceholder": "이메일",
+      "phonePlaceholder": "전화번호",
+      "messagePlaceholder": "메시지",
+      "submitButton": "메시지 보내기",
+      "loading": "로딩 중",
+      "successMessage": "메시지가 성공적으로 전송되었습니다. 감사합니다!",
+      "errorMessage": "메시지 전송 중 오류가 발생했습니다"
+    }
+  },
+  "projectsFilter": {
+    "all": "전체",
+    "investment": "투자",
+    "services": "서비스",
+    "trading": "무역",
+    "community": "커뮤니티"
+  },
+  "footer": {
+    "description": "PT. Sinergi Cahaya Utama Indah",
+    "location": "자카르타, 인도네시아",
+    "phone": "전화:",
+    "email": "이메일:",
+    "website": "웹사이트:",
+    "copyright": "모든 권리 보유"
+  }
+}

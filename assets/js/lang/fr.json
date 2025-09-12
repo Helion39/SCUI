@@ -1,0 +1,127 @@
+{
+  "sitename": "SCUI",
+  "nav": {
+    "beranda": "Accueil",
+    "tentang": "À Propos",
+    "layanan": "Services",
+    "proyek": "Projets",
+    "berita": "Actualités",
+    "lainnya": "Plus",
+    "tim": "Équipe de Direction",
+    "mitra": "Partenaires et Clients",
+    "dokumentasi": "Documentation",
+    "visi": "Vision et Mission",
+    "kontak": "Contact"
+  },
+  "hero": {
+    "title": "Bienvenue chez<br>PT. Sinergi Cahaya Utama Indah",
+    "description": "Entrepreneuriat social pour inspirer la collaboration intersectorielle afin de créer un impact social positif et la prospérité pour les générations futures.",
+    "button": "En Savoir Plus"
+  },
+  "getStarted": {
+    "title": "Philosophie de l'Entreprise - Synergie de Rentabilité et d'Humanité",
+    "description1": "PT SCUI maintient la philosophie que la gestion des fonds waqf productifs doit être dirigée pour créer une croissance économique durable, tout en maintenant la valeur fondamentale de confiance qui ne doit pas diminuer.",
+    "description2": "Dans le parcours vers devenir une société de capital-risque basée sur l'entreprise sociale, SCUI investit stratégiquement dans des entreprises qui non seulement promettent des retours financiers, mais apportent aussi un impact social positif à la société indonésienne.",
+    "consultation": {
+      "title": "Obtenir une Consultation",
+      "subtitle": "Contactez-nous pour en savoir plus sur les services disponibles et les opportunités de coopération."
+    }
+  },
+  "vision": {
+    "title": "Vision"
+  },
+  "mission": {
+    "title": "Mission"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Services professionnels que nous fournissons pour soutenir l'écosystème waqf productif et l'autonomisation communautaire",
+    "wakaf": {
+      "title": "Gestion de Waqf Productif",
+      "description": "Gérer professionnellement les fonds waqf pour augmenter la valeur des actifs de manière durable sans réduire les fonds waqf principaux."
+    },
+    "pemberdayaan": {
+      "title": "Autonomisation Communautaire",
+      "description": "Programmes d'autonomisation tels que chariots de PME, forage de puits d'eau propre et installations de panneaux solaires pour les communautés."
+    },
+    "kemitraan": {
+      "title": "Partenariats Stratégiques",
+      "description": "Construire des partenariats avec des entreprises publiques et des compagnies privées pour des projets d'infrastructure et de développement."
+    }
+  },
+  "whatWeDo": {
+    "title": "Ce Que Nous Faisons",
+    "subtitle": "Trois unités commerciales principales de PT SCUI dans la gestion des fonds waqf productifs",
+    "investment": {
+      "title": "INVESTISSEMENT",
+      "description": "L'unité commerciale d'investissement de PT SCUI se concentre sur la gestion des fonds waqf productifs dans le but d'augmenter la valeur des actifs de manière durable sans réduire les fonds waqf principaux. Plus grand investissement actuel : PT Kembar Jaya Abadi pour le travail Mécanique Électrique à l'entreprise publique PT Kereta Api Properti Manajemen (KAPM)."
+    },
+    "services": {
+      "title": "SERVICES",
+      "description": "L'unité commerciale Services de PT SCUI fournit divers services professionnels qui soutiennent les besoins de l'écosystème Lembaga Wakaf Nurul Taqwa (LWNT) et ZIS Indosat et soutient les activités opérationnelles d'autres entreprises productives. SCUI travaille sur plusieurs projets de distribution de fonds Zakat, Infaq et Sedaqah de ZIS Indosat pour l'autonomisation communautaire."
+    },
+    "trading": {
+      "title": "COMMERCE",
+      "description": "Commerce de biens stratégiques et de matières premières pour soutenir la croissance économique et l'autonomisation communautaire en Indonésie."
+    }
+  },
+  "features": {
+    "title": "Points Forts de l'Entreprise",
+    "subtitle": "Quatre axes principaux qui font de PT SCUI une entreprise sociale leader dans la gestion de waqf productif"
+  },
+  "projects": {
+    "title": "Projets Récents",
+    "subtitle": "Portefeuille de projets d'investissement, de service et de commerce de PT SCUI dans la gestion des fonds waqf productifs"
+  },
+  "clients": {
+    "title": "Clients et Partenaires Commerciaux",
+    "subtitle": "PT SCUI est fière de travailler avec divers clients et partenaires stratégiques dans le développement d'un écosystème commercial durable"
+  },
+  "ecosystem": {
+    "title": "Écosystème de Partenariat",
+    "subtitle": "PT SCUI fait partie intégrante de l'écosystème socio-économique dans l'environnement Indosat qui fonctionne avec des principes de durabilité et d'autonomisation"
+  },
+  "blog": {
+    "title": "Dernières Actualités et Articles",
+    "subtitle": "Restez à jour avec les derniers développements des projets et activités de SCUI dans la gestion des fonds waqf productifs"
+  },
+  "accessibility": {
+    "title": "Options d'Accessibilité",
+    "dyslexicFont": "Police Dyslexie",
+    "increaseText": "A+",
+    "decreaseText": "A-",
+    "highContrast": "Contraste Élevé",
+    "readingGuide": "Guide de Lecture",
+    "language": "Langue :",
+    "reset": "Réinitialiser"
+  },
+  "form": {
+    "consultation": {
+      "title": "Obtenir une Consultation",
+      "subtitle": "Contactez-nous pour en savoir plus sur les services disponibles et les opportunités de coopération.",
+      "namePlaceholder": "Nom Complet",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Numéro de Téléphone",
+      "messagePlaceholder": "Votre Message",
+      "submitButton": "Envoyer le Message",
+      "loading": "Chargement",
+      "successMessage": "Votre message a été envoyé avec succès. Merci !",
+      "errorMessage": "Une erreur s'est produite lors de l'envoi du message"
+    }
+  },
+  "projectsFilter": {
+    "all": "Tous",
+    "investment": "Investissement",
+    "services": "Services",
+    "trading": "Commerce",
+    "community": "Communauté"
+  },
+  "footer": {
+    "description": "PT. Sinergi Cahaya Utama Indah",
+    "location": "Jakarta, Indonésie",
+    "phone": "Téléphone :",
+    "email": "Email :",
+    "website": "Site Web :",
+    "copyright": "Tous Droits Réservés"
+  }
+}

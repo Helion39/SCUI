@@ -95,6 +95,103 @@
     "language": "Bahasa:",
     "reset": "Reset"
   },
+  "form": {
+    "consultation": {
+      "title": "Dapatkan Konsultasi",
+      "subtitle": "Hubungi kami untuk mengetahui lebih lanjut tentang layanan dan kerjasama yang tersedia.",
+      "namePlaceholder": "Nama Lengkap",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Nomor Telepon",
+      "messagePlaceholder": "Pesan Anda",
+      "submitButton": "Kirim Pesan",
+      "loading": "Memuat",
+      "successMessage": "Pesan Anda telah berhasil dikirim. Terima kasih!",
+      "errorMessage": "Terjadi kesalahan saat mengirim pesan"
+    }
+  },
+  "servicesDetails": {
+    "investment": {
+      "title": "Investasi",
+      "description": "Investasi strategis pada berbagai sektor untuk meningkatkan nilai aset wakaf secara berkelanjutan tanpa mengurangi pokok dana.",
+      "readMore": "Selengkapnya"
+    },
+    "generalServices": {
+      "title": "Jasa Umum (General Services)",
+      "description": "Layanan profesional untuk mendukung ekosistem LWNT dan ZIS Indosat, termasuk penyaluran dana sosial dan pemberdayaan UMKM.",
+      "readMore": "Selengkapnya"
+    },
+    "trading": {
+      "title": "Perdagangan (Trading)",
+      "description": "Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia.",
+      "readMore": "Selengkapnya"
+    }
+  },
+  "whatWeDoDetails": {
+    "investment": {
+      "title": "INVESTASI",
+      "description": "Unit usaha investasi PT SCUI fokus pada pengelolaan dana wakaf produktif dengan tujuan untuk meningkatkan nilai aset secara berkelanjutan tanpa mengurangi pokok dana wakaf. Saat ini investasi terbesar yang dijalankan SCUI adalah pada PT Kembar Jaya Abadi dalam rangka pengerjaan Mechanical Electrical pada Perusahaan BUMN, PT Kereta Api Properti Manajemen (KAPM)."
+    },
+    "services": {
+      "title": "LAYANAN",
+      "description": "Unit usaha Services PT SCUI menyediakan berbagai layanan profesional yang mendukung kebutuhan ekosistem Lembaga Wakaf Nurul Taqwa (LWNT) dan ZIS Indosat serta mendukung kegiatan operasional usaha-usaha produktif lain. SCUI mengerjakan beberapa proyek penyaluran dana Zakat, Infaq, dan Sedaqah ZIS Indosat untuk pemberdayaan masyarakat."
+    },
+    "trading": {
+      "title": "PERDAGANGAN",
+      "description": "Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia."
+    }
+  },
+  "visionMission": {
+    "visionContent": {
+      "point1": "• Menjadi Perusahaan sosial enterprise yang utama dan berdampak kebaikan pada kemanusiaan bagi Indonesia.",
+      "point2": "• Menjadi perusahaan sosial enterprise terdepan yang berkontribusi pada pemberdayaan ekonomi masyarakat melalui inovasi bisnis berkelanjutan.",
+      "point3": "• Menjadi katalis perubahan sosial dan lingkungan dengan mengoptimalkan potensi wakaf produktif secara profesional dan transparan.",
+      "point4": "• Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang."
+    },
+    "missionContent": {
+      "point1": "• Membangun organisasi sosial enterprise yang unggul dalam bidang bisnis sehingga berdampak untuk para stakeholders.",
+      "point2": "• Mengelola dana wakaf produktif secara aman dan berkelanjutan untuk memastikan pertumbuhan aset dan manfaat bagi masyarakat di masa depan.",
+      "point3": "• Menciptakan ekosistem bisnis yang berorientasi pada kesejahteraan sosial dan lingkungan tanpa mengorbankan prinsip profitabilitas.",
+      "point4": "• Membangun kemitraan strategis dengan berbagai pihak guna memperluas dampak sosial serta meningkatkan nilai bagi para pemangku kepentingan (stakeholders)."
+    }
+  },
+  "featuresDetails": {
+    "socialEnterprise": {
+      "title": "Perusahaan Social Enterprise Terdepan",
+      "subtitle": "PT SCUI menggabungkan profitabilitas dengan dampak sosial positif, menciptakan nilai berkelanjutan bagi semua stakeholder.",
+      "point1": "Bisnis yang mengutamakan dampak sosial dan lingkungan",
+      "point2": "Keseimbangan antara profit dan purpose",
+      "point3": "Inovasi bisnis berkelanjutan untuk pemberdayaan masyarakat"
+    },
+    "wakafProduktif": {
+      "title": "Pengelolaan Wakaf Produktif Profesional",
+      "subtitle": "Mengelola dana wakaf dengan prinsip amanah, transparansi, dan keberlanjutan untuk pertumbuhan aset jangka panjang.",
+      "point1": "Pengelolaan dana wakaf secara aman dan berkelanjutan",
+      "point2": "Investasi strategis dengan pertimbangan syariah",
+      "point3": "Peningkatan nilai aset tanpa mengurangi pokok dana wakaf",
+      "point4": "Transparansi dan akuntabilitas penuh kepada stakeholder"
+    },
+    "kemitraanBumn": {
+      "title": "Kemitraan Strategis dengan BUMN",
+      "subtitle": "Membangun kemitraan strategis dengan BUMN dan perusahaan swasta nasional untuk memperluas dampak sosial dan ekonomi.",
+      "point1": "Pengalaman bermitra dengan PT Kereta Api Properti Manajemen (KAPM)",
+      "point2": "Kerjasama dengan PT Berkah Industri Mesin Angkat (PT Pelindo)",
+      "point3": "Rekam jejak proyek Kemenkumham dan infrastruktur nasional"
+    },
+    "transparansi": {
+      "title": "Transparansi dan Profesionalisme",
+      "subtitle": "Menjalankan operasional dengan standar tata kelola perusahaan yang baik dan akuntabilitas penuh.",
+      "point1": "Struktur manajemen yang seimbang dengan 3 komisaris dan 3 direksi",
+      "point2": "Pengawasan strategis dan pelaksanaan operasional yang efektif",
+      "point3": "Komitmen profesionalisme dalam menjalankan amanah wakaf produktif"
+    }
+  },
+  "projectsFilter": {
+    "all": "Semua",
+    "investment": "Investasi",
+    "services": "Layanan",
+    "trading": "Perdagangan",
+    "community": "Komunitas"
+  },
   "footer": {
     "description": "PT. Sinergi Cahaya Utama Indah",
     "location": "Jakarta, Indonesia",

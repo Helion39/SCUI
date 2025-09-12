@@ -55,24 +55,31 @@
     <button id="accessibility-close" class="accessibility-close" aria-label="Close Accessibility Panel">
       <i class="bi bi-x"></i>
     </button>
-    <h4>Accessibility Options</h4>
+    <h4 data-translate="accessibility.title">Accessibility Options</h4>
     <div class="accessibility-controls">
-      <button id="dyslexic-font" class="btn btn-sm btn-outline-primary">Dyslexia Font</button>
-      <button id="increase-text" class="btn btn-sm btn-outline-primary">A+</button>
-      <button id="decrease-text" class="btn btn-sm btn-outline-primary">A-</button>
-      <button id="high-contrast" class="btn btn-sm btn-outline-primary">High Contrast</button>
-      <button id="reading-guide" class="btn btn-sm btn-outline-primary">Reading Guide</button>
+      <button id="dyslexic-font" class="btn btn-sm btn-outline-primary" data-translate="accessibility.dyslexicFont">Dyslexia Font</button>
+      <button id="increase-text" class="btn btn-sm btn-outline-primary" data-translate="accessibility.increaseText">A+</button>
+      <button id="decrease-text" class="btn btn-sm btn-outline-primary" data-translate="accessibility.decreaseText">A-</button>
+      <button id="high-contrast" class="btn btn-sm btn-outline-primary" data-translate="accessibility.highContrast">High Contrast</button>
+      <button id="reading-guide" class="btn btn-sm btn-outline-primary" data-translate="accessibility.readingGuide">Reading Guide</button>
       
       <!-- Language Selector -->
       <div class="language-selector">
-        <label for="language-select" class="language-label">Language:</label>
+        <label for="language-select" class="language-label" data-translate="accessibility.language">Language:</label>
         <select id="language-select" class="language-dropdown">
           <option value="id">Bahasa Indonesia</option>
           <option value="en">English</option>
+          <option value="zh">中文 (Chinese)</option>
+          <option value="ar">العربية (Arabic)</option>
+          <option value="es">Español (Spanish)</option>
+          <option value="fr">Français (French)</option>
+          <option value="ja">日本語 (Japanese)</option>
+          <option value="ko">한국어 (Korean)</option>
+          <option value="ru">Русский (Russian)</option>
         </select>
       </div>
       
-      <button id="reset-accessibility" class="btn btn-sm btn-outline-secondary">Reset</button>
+      <button id="reset-accessibility" class="btn btn-sm btn-outline-secondary" data-translate="accessibility.reset">Reset</button>
     </div>
   </div>
 
@@ -171,32 +178,32 @@
 
           <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
             <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>Dapatkan Konsultasi</h3>
-              <p>Hubungi kami untuk mengetahui lebih lanjut tentang layanan dan kerjasama yang tersedia.</p>
+              <h3 data-translate="form.consultation.title">Dapatkan Konsultasi</h3>
+              <p data-translate="form.consultation.subtitle">Hubungi kami untuk mengetahui lebih lanjut tentang layanan dan kerjasama yang tersedia.</p>
               <div class="row gy-3">
 
                 <div class="col-12">
-                  <input type="text" name="name" class="form-control" placeholder="Nama Lengkap" required="">
+                  <input type="text" name="name" class="form-control" data-translate="form.consultation.namePlaceholder" placeholder="Nama Lengkap" required="">
                 </div>
 
                 <div class="col-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                  <input type="email" class="form-control" name="email" data-translate="form.consultation.emailPlaceholder" placeholder="Email" required="">
                 </div>
 
                 <div class="col-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Nomor Telepon" required="">
+                  <input type="text" class="form-control" name="phone" data-translate="form.consultation.phonePlaceholder" placeholder="Nomor Telepon" required="">
                 </div>
 
                 <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Pesan Anda" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" data-translate="form.consultation.messagePlaceholder" placeholder="Pesan Anda" required=""></textarea>
                 </div>
 
                 <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
+                  <div class="loading" data-translate="form.consultation.loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Pesan Anda telah berhasil dikirim. Terima kasih!</div>
+                  <div class="sent-message" data-translate="form.consultation.successMessage">Pesan Anda telah berhasil dikirim. Terima kasih!</div>
 
-                  <button type="submit">Kirim Pesan</button>
+                  <button type="submit" data-translate="form.consultation.submitButton">Kirim Pesan</button>
                 </div>
 
               </div>
@@ -1092,6 +1099,12 @@
       
       // Load language files
       async function loadLanguage(lang) {
+        // If already loaded, skip
+        if (translations[lang]) {
+          console.log(`${lang} translations already loaded`);
+          return;
+        }
+        
         try {
           const response = await fetch(`./assets/js/lang/${lang}.json`);
           if (!response.ok) {
@@ -1099,7 +1112,7 @@
           }
           const data = await response.json();
           translations[lang] = data;
-          console.log(`Successfully loaded ${lang} translations`, data);
+          console.log(`Successfully loaded ${lang} translations from file`, data);
         } catch (error) {
           console.error(`Error loading language file for ${lang}:`, error);
           
@@ -1379,7 +1392,12 @@
               if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = translation;
               } else {
-                element.textContent = translation;
+                // Use innerHTML for elements that might contain HTML tags (like hero title)
+                if (key === 'hero.title') {
+                  element.innerHTML = translation;
+                } else {
+                  element.textContent = translation;
+                }
               }
             }
           });
@@ -1521,7 +1539,13 @@
         if (translations[currentLanguage]) {
           applyTranslations(currentLanguage);
         } else {
-          console.warn(`Translations for ${currentLanguage} not yet loaded`);
+          console.warn(`Translations for ${currentLanguage} not yet loaded, trying to load...`);
+          // Try to load the language if not already loaded
+          loadLanguage(currentLanguage).then(() => {
+            if (translations[currentLanguage]) {
+              applyTranslations(currentLanguage);
+            }
+          });
         }
       });
       
