@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switch Test</title>
+</head>
+<body>
+    <h1 data-translate="hero.title">Selamat Datang di PT. Sinergi Cahaya Utama Indah</h1>
+    <p data-translate="hero.description">Sebagai pengelola harta benda wakaf produktif dari Lembaga Wakaf Nurul Taqwa (LWNT) Indosat, PT SCUI mengelola tiga kegiatan utama yaitu investasi, jasa umum (General Services), dan perdagangan umum. Didirikan sejak November 2022 dengan pengalaman bermitra dengan perusahaan BUMN untuk berbagai jenis kerjasama usaha.</p>
+    
+    <select id="language-select">
+        <option value="id">Bahasa Indonesia</option>
+        <option value="en">English</option>
+    </select>
+
+    <script>
+        const translations = {};
+        let currentLanguage = 'id';
+        const languageSelect = document.getElementById('language-select');
+
+        // Load language files
+        async function loadLanguage(lang) {
+            try {
+                const response = await fetch(`./assets/js/lang/${lang}.json`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                translations[lang] = data;
+                console.log(`Successfully loaded ${lang} translations`, data);
+            } catch (error) {
+                console.error(`Error loading language file for ${lang}:`, error);
+            }
+        }
+
+        // Helper function to get nested translation
+        function getNestedTranslation(obj, path) {
+            return path.split('.').reduce((current, key) => current && current[key], obj);
+        }
+
+        // Apply translations to the page
+        function applyTranslations(lang) {
+            console.log(`Applying translations for language: ${lang}`);
+            const t = translations[lang];
+            if (!t) {
+                console.warn(`Translation file for ${lang} not loaded`);
+                return;
+            }
+
+            try {
+                // Update elements with data-translate attributes
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    const translation = getNestedTranslation(t, key);
+                    if (translation) {
+                        element.textContent = translation;
+                    }
+                });
+            } catch (error) {
+                console.error(`Error applying translations for ${lang}:`, error);
+            }
+        }
+
+        // Initialize language system
+        async function initLanguage() {
+            try {
+                await Promise.all([
+                    loadLanguage('id'),
+                    loadLanguage('en')
+                ]);
+                
+                languageSelect.value = currentLanguage;
+                applyTranslations(currentLanguage);
+            } catch (error) {
+                console.error('Error initializing language system:', error);
+            }
+        }
+
+        // Language change handler
+        languageSelect.addEventListener('change', function() {
+            console.log('Language change detected:', this.value);
+            currentLanguage = this.value;
+            if (translations[currentLanguage]) {
+                applyTranslations(currentLanguage);
+            } else {
+                console.warn(`Translations for ${currentLanguage} not yet loaded`);
+            }
+        });
+
+        // Initialize language system
+        document.addEventListener('DOMContentLoaded', function() {
+            initLanguage();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+{
+  "sitename": "SCUI",
+  "nav": {
+    "beranda": "Home",
+    "tentang": "About Us",
+    "layanan": "Services",
+    "proyek": "Projects",
+    "berita": "News",
+    "lainnya": "More",
+    "tim": "Management Team",
+    "mitra": "Partners & Clients",
+    "dokumentasi": "Documentation",
+    "visi": "Vision & Mission",
+    "kontak": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to<br>PT. Sinergi Cahaya Utama Indah",
+    "description": "Social Entrepreneurship to inspire cross-sector collaboration to create positive social impact and prosperity for future generations.",
+    "button": "Learn More"
+  },
+  "getStarted": {
+    "title": "Company Philosophy - Synergy of Profitability and Humanity",
+    "description1": "PT SCUI holds the philosophy that the management of productive waqf funds must be directed to create sustainable economic growth, while maintaining the core value of trust that must not be diminished.",
+    "description2": "In the journey towards becoming a social enterprise-based venture capital company, SCUI invests strategically in businesses that not only promise financial returns, but also bring positive social impact to Indonesian society.",
+    "consultation": {
+      "title": "Get Consultation",
+      "subtitle": "Contact us to learn more about available services and cooperation opportunities."
+    }
+  },
+  "vision": {
+    "title": "Vision"
+  },
+  "mission": {
+    "title": "Mission"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional services we provide to support the productive waqf ecosystem and community empowerment",
+    "wakaf": {
+      "title": "Productive Waqf Management",
+      "description": "Professionally managing waqf funds to increase asset value sustainably without reducing the principal waqf funds."
+    },
+    "pemberdayaan": {
+      "title": "Community Empowerment",
+      "description": "Empowerment programs such as UMKM carts, clean water well drilling, and solar panel installations for communities."
+    },
+    "kemitraan": {
+      "title": "Strategic Partnerships",
+      "description": "Building partnerships with state-owned enterprises and private companies for infrastructure and development projects."
+    }
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "subtitle": "Three main business units of PT SCUI in managing productive waqf funds",
+    "investment": {
+      "title": "INVESTMENT",
+      "description": "PT SCUI's investment business unit focuses on managing productive waqf funds with the aim of increasing asset value sustainably without reducing the principal waqf funds. Current largest investment: PT Kembar Jaya Abadi for Mechanical Electrical work at state-owned enterprise PT Kereta Api Properti Manajemen (KAPM)."
+    },
+    "services": {
+      "title": "SERVICES",
+      "description": "PT SCUI's Services business unit provides various professional services that support the needs of the Lembaga Wakaf Nurul Taqwa (LWNT) and ZIS Indosat ecosystem and supports the operational activities of other productive businesses. SCUI works on several Zakat, Infaq, and Sedaqah fund distribution projects from ZIS Indosat for community empowerment."
+    },
+    "trading": {
+      "title": "TRADING",
+      "description": "Trading of strategic goods and commodities to support economic growth and community empowerment in Indonesia."
+    }
+  },
+  "features": {
+    "title": "Company Highlights",
+    "subtitle": "Four main focuses that make PT SCUI a leading social enterprise in productive waqf management"
+  },
+  "projects": {
+    "title": "Latest Projects",
+    "subtitle": "Portfolio of investment, service, and trading projects of PT SCUI in managing productive waqf funds"
+  },
+  "clients": {
+    "title": "Clients & Business Partners",
+    "subtitle": "PT SCUI is proud to work with various clients and strategic partners in developing a sustainable business ecosystem"
+  },
+  "ecosystem": {
+    "title": "Partnership Ecosystem",
+    "subtitle": "PT SCUI is an integral part of the social-economic ecosystem in the Indosat environment that operates with sustainability and empowerment principles"
+  },
+  "blog": {
+    "title": "Latest News & Articles",
+    "subtitle": "Stay updated with the latest developments in SCUI projects and activities in managing productive waqf funds"
+  },
+  "accessibility": {
+    "title": "Accessibility Options",
+    "dyslexicFont": "Dyslexia Font",
+    "increaseText": "A+",
+    "decreaseText": "A-",
+    "highContrast": "High Contrast",
+    "readingGuide": "Reading Guide",
+    "language": "Language:",
+    "reset": "Reset"
+  },
+  "footer": {
+    "description": "PT. Sinergi Cahaya Utama Indah",
+    "location": "Jakarta, Indonesia",
+    "phone": "Phone:",
+    "email": "Email:",
+    "website": "Website:",
+    "copyright": "All Rights Reserved"
+  }
+}

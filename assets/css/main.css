@@ -103,6 +103,25 @@
   z-index: 999;
 }
 
+/* Accessibility Overlay */
+.accessibility-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.accessibility-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .accessibility-panel.show {
   left: 0;
 }
@@ -162,6 +181,51 @@
   color: var(--contrast-color);
 }
 
+/* Language Selector Styling */
+.language-selector {
+  margin: 12px 0;
+}
+
+.language-label {
+  display: block;
+  font-size: 14px;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.language-dropdown {
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%) !important;
+  color: color-mix(in srgb, var(--default-color), transparent 30%) !important;
+  background: white !important;
+  border-radius: 0 !important;
+  font-size: 14px !important;
+  font-family: var(--default-font) !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  text-align: left !important;
+}
+
+.language-dropdown:hover,
+.language-dropdown:focus {
+  background: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: var(--contrast-color) !important;
+  outline: none !important;
+  transform: translateY(-1px) !important;
+}
+
+.language-dropdown option {
+  background: white !important;
+  color: var(--default-color) !important;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
 /* Dyslexia-Friendly Features */
 .dyslexic-font {
   font-family: 'OpenDyslexic', Arial, sans-serif !important;
@@ -205,13 +269,7 @@
   margin-bottom: calc(0.5rem * var(--content-text-size, 100) / 100);
 }
 
-/* Preserve original sizing for UI elements */
-.custom-text-sizing h1,
-.custom-text-sizing h2,
-.custom-text-sizing h3,
-.custom-text-sizing h4,
-.custom-text-sizing h5,
-.custom-text-sizing h6,
+/* Preserve original sizing for UI elements - prevent text scaling from affecting these */
 .custom-text-sizing .btn,
 .custom-text-sizing button,
 .custom-text-sizing .nav-link,
@@ -219,12 +277,81 @@
 .custom-text-sizing .sitename,
 .custom-text-sizing .footer-links,
 .custom-text-sizing .card-title,
-.custom-text-sizing .section-title h2,
 .custom-text-sizing .widget-title,
 .custom-text-sizing .post-title,
 .custom-text-sizing .client-name {
-  font-size: inherit !important;
-  line-height: inherit !important;
+  font-size: revert !important;
+  line-height: revert !important;
+}
+
+/* Explicitly preserve Bootstrap heading sizes when text scaling is active */
+.custom-text-sizing h1 {
+  font-size: calc(1.375rem + 1.5vw) !important;
+  line-height: 1.2 !important;
+}
+
+@media (min-width: 1200px) {
+  .custom-text-sizing h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+.custom-text-sizing h2,
+.custom-text-sizing .section-title h2,
+.custom-text-sizing .hero .info h2 {
+  font-size: calc(1.325rem + 0.9vw) !important;
+  line-height: 1.2 !important;
+}
+
+@media (min-width: 1200px) {
+  .custom-text-sizing h2,
+  .custom-text-sizing .section-title h2,
+  .custom-text-sizing .hero .info h2 {
+    font-size: 2rem !important;
+  }
+}
+
+/* Override hero-specific font sizes when accessibility is active */
+.custom-text-sizing .hero .info h2 {
+  font-size: 56px !important;
+}
+
+@media (max-width: 768px) {
+  .custom-text-sizing .hero .info h2 {
+    font-size: 36px !important;
+  }
+}
+
+.custom-text-sizing h3 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+  line-height: 1.2 !important;
+}
+
+@media (min-width: 1200px) {
+  .custom-text-sizing h3 {
+    font-size: 1.75rem !important;
+  }
+}
+
+.custom-text-sizing h4 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+  line-height: 1.2 !important;
+}
+
+@media (min-width: 1200px) {
+  .custom-text-sizing h4 {
+    font-size: 1.5rem !important;
+  }
+}
+
+.custom-text-sizing h5 {
+  font-size: 1.25rem !important;
+  line-height: 1.2 !important;
+}
+
+.custom-text-sizing h6 {
+  font-size: 1rem !important;
+  line-height: 1.2 !important;
 }
 
 /* Ensure containers can handle text scaling */
@@ -1080,6 +1207,7 @@ section,
   font-size: 56px;
   font-weight: 700;
   position: relative;
+  text-align: center;
 }
 
 .hero .info h2:after {
@@ -3269,4 +3397,313 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}/*-------
+-------------------------------------------------------
+# Get Started Section - Improved Typography
+--------------------------------------------------------------*/
+.get-started .content h3 {
+  font-size: 1.75rem !important;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.get-started .content p {
+  font-size: 1.1rem !important;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  color: var(--default-color);
+}
+
+/* Form section improvements */
+.get-started .php-email-form h3 {
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem;
+}
+
+.get-started .php-email-form p {
+  font-size: 1rem !important;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.get-started .php-email-form .form-control {
+  font-size: 1rem !important;
+  padding: 0.75rem 1rem;
+}
+
+.get-started .php-email-form button {
+  font-size: 1rem !important;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .get-started .content h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .get-started .content p {
+    font-size: 1rem !important;
+  }
+}/*---
+-----------------------------------------------------------
+# Features Section - Improved Typography
+--------------------------------------------------------------*/
+.features .section-title h2 {
+  font-size: 2.25rem !important;
+  margin-bottom: 1rem;
+}
+
+.features .section-title p {
+  font-size: 1.1rem !important;
+  line-height: 1.6;
+}
+
+.features .tab-content h3 {
+  font-size: 1.6rem !important;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.features .tab-content p {
+  font-size: 1.05rem !important;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.features .tab-content ul li {
+  font-size: 1rem !important;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.features .nav-tabs .nav-link h4 {
+  font-size: 1.1rem !important;
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# What We Do Section (Constructions) - Improved Typography
+--------------------------------------------------------------*/
+.constructions .section-title h2 {
+  font-size: 2.25rem !important;
+  margin-bottom: 1rem;
+}
+
+.constructions .section-title p {
+  font-size: 1.1rem !important;
+  line-height: 1.6;
+}
+
+.constructions .card-title {
+  font-size: 1.4rem !important;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.constructions .card-body p {
+  font-size: 1rem !important;
+  line-height: 1.7;
+}
+
+/*--------------------------------------------------------------
+# Services Section - Improved Typography
+--------------------------------------------------------------*/
+.services .section-title h2 {
+  font-size: 2.25rem !important;
+  margin-bottom: 1rem;
+}
+
+.services .section-title p {
+  font-size: 1.1rem !important;
+  line-height: 1.6;
+}
+
+.services .service-item h3 {
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services .service-item p {
+  font-size: 1rem !important;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.services .service-item .readmore {
+  font-size: 0.95rem !important;
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# Responsive Typography Adjustments
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .features .section-title h2,
+  .constructions .section-title h2,
+  .services .section-title h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .features .tab-content h3 {
+    font-size: 1.4rem !important;
+  }
+  
+  .constructions .card-title {
+    font-size: 1.2rem !important;
+  }
+  
+  .services .service-item h3 {
+    font-size: 1.15rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .features .section-title h2,
+  .constructions .section-title h2,
+  .services .section-title h2 {
+    font-size: 1.6rem !important;
+  }
+}/
+*--------------------------------------------------------------
+# Hero Section - Enhanced Typography for Updated Content
+--------------------------------------------------------------*/
+.hero .info h2 {
+  line-height: 1.3 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.hero .info p {
+  font-size: 1.4rem !important;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+
+@media (max-width: 768px) {
+  .hero .info p {
+    font-size: 1.2rem !important;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .info p {
+    font-size: 1.1rem !important;
+    margin-bottom: 1.5rem;
+  }
+}/*----
+----------------------------------------------------------
+# Hero Title - Force Two Lines Layout
+--------------------------------------------------------------*/
+.hero-title-custom {
+  max-width: 600px !important;
+  margin: 0 auto 1.5rem auto !important;
+  white-space: nowrap !important;
+}
+
+.hero-title-custom br {
+  display: block !important;
+}
+
+/* Override any responsive behavior that might break the layout */
+@media (max-width: 768px) {
+  .hero-title-custom {
+    max-width: 90% !important;
+    white-space: normal !important;
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title-custom {
+    max-width: 95% !important;
+    font-size: 1.8rem !important;
+  }
+}/*----
+----------------------------------------------------------
+# Hero Title - Two Lines Only Layout
+--------------------------------------------------------------*/
+.hero-title-custom {
+  max-width: 700px !important;
+  margin: 0 auto 1.5rem auto !important;
+  word-spacing: 0.1em !important;
+  letter-spacing: 0.02em !important;
+  display: inline-block !important;
+}
+
+/* Ensure the container doesn't restrict the title */
+.hero .info .col-lg-6 {
+  max-width: 100% !important;
+}
+
+/* Override any responsive behavior */
+@media (max-width: 992px) {
+  .hero-title-custom {
+    max-width: 600px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title-custom {
+    max-width: 90% !important;
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title-custom {
+    max-width: 95% !important;
+    font-size: 1.8rem !important;
+  }
+}/*-
+-------------------------------------------------------------
+# Hero Title - Centered Two Lines Layout
+--------------------------------------------------------------*/
+.hero-title-custom {
+  max-width: 700px !important;
+  margin: 0 auto 1.5rem auto !important;
+  word-spacing: 0.1em !important;
+  letter-spacing: 0.02em !important;
+  text-align: center !important;
+}
+
+/* Ensure the container doesn't restrict the title */
+.hero .info .col-lg-6 {
+  max-width: 100% !important;
+}
+
+/* Override any responsive behavior */
+@media (max-width: 992px) {
+  .hero-title-custom {
+    max-width: 600px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title-custom {
+    max-width: 90% !important;
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title-custom {
+    max-width: 95% !important;
+    font-size: 1.8rem !important;
+  }
+}/
+*--------------------------------------------------------------
+# Hero Title Centering Fix
+--------------------------------------------------------------*/
+.hero .info h2.hero-title-custom {
+  text-align: center !important;
+  max-width: 700px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

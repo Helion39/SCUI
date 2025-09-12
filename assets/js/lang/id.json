@@ -1,0 +1,106 @@
+{
+  "sitename": "SCUI",
+  "nav": {
+    "beranda": "Beranda",
+    "tentang": "Tentang Kami",
+    "layanan": "Layanan",
+    "proyek": "Proyek",
+    "berita": "Berita",
+    "lainnya": "Lainnya",
+    "tim": "Tim Manajemen",
+    "mitra": "Mitra & Klien",
+    "dokumentasi": "Dokumentasi",
+    "visi": "Visi & Misi",
+    "kontak": "Kontak"
+  },
+  "hero": {
+    "title": "Selamat Datang di<br>PT. Sinergi Cahaya Utama Indah",
+    "description": "Social Enterprenenship untuk Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.",
+    "button": "Pelajari Lebih Lanjut"
+  },
+  "getStarted": {
+    "title": "Filosofi Perusahaan - Sinergi Profitabilitas dan Kemanusiaan",
+    "description1": "PT SCUI berpegang pada filosofi bahwa pengelolaan dana wakaf produktif harus diarahkan untuk menciptakan pertumbuhan ekonomi yang berkelanjutan, sambil tetap menjaga nilai utama amanah yang tidak boleh berkurang.",
+    "description2": "Dalam rangka perjalanan menuju perusahaan venture capital berbasis social enterprise, SCUI berinvestasi secara strategis dalam bisnis-bisnis yang tidak hanya menjanjikan keuntungan finansial, tetapi juga membawa dampak sosial positif bagi masyarakat Indonesia.",
+    "consultation": {
+      "title": "Dapatkan Konsultasi",
+      "subtitle": "Hubungi kami untuk mengetahui lebih lanjut tentang layanan dan kerjasama yang tersedia."
+    }
+  },
+  "vision": {
+    "title": "Visi"
+  },
+  "mission": {
+    "title": "Misi"
+  },
+  "services": {
+    "title": "Layanan Kami",
+    "subtitle": "Layanan profesional yang kami sediakan untuk mendukung ekosistem wakaf produktif dan pemberdayaan masyarakat",
+    "wakaf": {
+      "title": "Pengelolaan Wakaf Produktif",
+      "description": "Mengelola dana wakaf secara profesional untuk meningkatkan nilai aset secara berkelanjutan tanpa mengurangi pokok dana wakaf."
+    },
+    "pemberdayaan": {
+      "title": "Pemberdayaan Masyarakat",
+      "description": "Program-program pemberdayaan seperti gerobak UMKM, sumur bor air bersih, dan instalasi panel surya untuk masyarakat."
+    },
+    "kemitraan": {
+      "title": "Kemitraan Strategis",
+      "description": "Membangun kemitraan dengan BUMN dan perusahaan swasta untuk proyek-proyek infrastruktur dan pembangunan."
+    }
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "subtitle": "Tiga unit usaha utama PT SCUI dalam mengelola dana wakaf produktif",
+    "investment": {
+      "title": "INVESTMENT",
+      "description": "Unit usaha investasi PT SCUI fokus pada pengelolaan dana wakaf produktif dengan tujuan untuk meningkatkan nilai aset secara berkelanjutan tanpa mengurangi pokok dana wakaf. Investasi terbesar saat ini: PT Kembar Jaya Abadi untuk pengerjaan Mechanical Electrical pada BUMN PT Kereta Api Properti Manajemen (KAPM)."
+    },
+    "services": {
+      "title": "SERVICES",
+      "description": "Unit usaha Services PT SCUI menyediakan berbagai layanan profesional yang mendukung kebutuhan ekosistem Lembaga Wakaf Nurul Taqwa (LWNT) dan ZIS Indosat serta mendukung kegiatan operasional usaha-usaha produktif lain. SCUI mengerjakan beberapa proyek penyaluran dana Zakat, Infaq, dan Sedaqah ZIS Indosat untuk pemberdayaan masyarakat."
+    },
+    "trading": {
+      "title": "TRADING",
+      "description": "Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia."
+    }
+  },
+  "features": {
+    "title": "Keunggulan Perusahaan",
+    "subtitle": "Empat fokus utama yang menjadikan PT SCUI sebagai perusahaan social enterprise terdepan dalam pengelolaan wakaf produktif"
+  },
+  "projects": {
+    "title": "Proyek Terbaru",
+    "subtitle": "Portofolio proyek investasi, layanan, dan perdagangan PT SCUI dalam mengelola dana wakaf produktif"
+  },
+  "clients": {
+    "title": "Klien & Mitra Bisnis",
+    "subtitle": "PT SCUI bangga bekerja sama dengan berbagai klien dan mitra strategis dalam mengembangkan ekosistem bisnis yang berkelanjutan"
+  },
+  "ecosystem": {
+    "title": "Ekosistem Kemitraan",
+    "subtitle": "PT SCUI merupakan bagian integral dari ekosistem sosial-ekonomi di lingkungan Indosat yang bergerak dengan prinsip-prinsip keberlanjutan dan pemberdayaan"
+  },
+  "blog": {
+    "title": "Berita & Artikel Terbaru",
+    "subtitle": "Tetap update dengan perkembangan terbaru proyek dan kegiatan PT SCUI dalam mengelola dana wakaf produktif"
+  },
+  "accessibility": {
+    "title": "Opsi Aksesibilitas",
+    "dyslexicFont": "Font Disleksia",
+    "increaseText": "A+",
+    "decreaseText": "A-",
+    "highContrast": "Kontras Tinggi",
+    "readingGuide": "Panduan Baca",
+    "language": "Bahasa:",
+    "reset": "Reset"
+  },
+  "footer": {
+    "description": "PT. Sinergi Cahaya Utama Indah",
+    "location": "Jakarta, Indonesia",
+    "phone": "Telepon:",
+    "email": "Email:",
+    "website": "Website:",
+    "copyright": "Hak Cipta Dilindungi"
+  }
+}
