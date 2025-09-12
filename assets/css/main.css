@@ -185,14 +185,14 @@
 .custom-text-sizing .meta,
 .custom-text-sizing .readmore {
   font-size: calc(1rem * var(--content-text-size, 100) / 100) !important;
-  line-height: calc(1.6 * var(--content-text-size, 100) / 100) !important;
+  line-height: 1.6 !important;
 }
 
 /* Special handling for card descriptions to prevent overflow */
 .custom-text-sizing .card-body p,
 .custom-text-sizing .service-item p {
   font-size: calc(0.9rem * var(--content-text-size, 100) / 100) !important;
-  line-height: calc(1.5 * var(--content-text-size, 100) / 100) !important;
+  line-height: 1.5 !important;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
@@ -201,7 +201,7 @@
 /* Icon box content scaling */
 .custom-text-sizing .icon-box div p {
   font-size: calc(0.95rem * var(--content-text-size, 100) / 100) !important;
-  line-height: calc(1.5 * var(--content-text-size, 100) / 100) !important;
+  line-height: 1.5 !important;
   margin-bottom: calc(0.5rem * var(--content-text-size, 100) / 100);
 }
 
@@ -950,7 +950,7 @@ h6 {
 }
 
 .page-title h1 {
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -1007,7 +1007,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 700;
   position: relative;
 }
@@ -1472,7 +1472,7 @@ section,
 }
 
 .alt-services h3 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -2025,7 +2025,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about .inner-title {
-  font-size: 2.75rem;
+  font-size: 3.25rem;
   font-weight: 700;
   margin: 30px 0;
 }

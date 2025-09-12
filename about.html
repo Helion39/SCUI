@@ -39,6 +39,27 @@
 
 <body class="about-page">
 
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-toolbar">
+    <button class="accessibility-toggle" id="accessibility-toggle-btn" aria-label="Open Accessibility Panel">
+      <i class="bi bi-universal-access"></i>
+    </button>
+  </div>
+
+  <!-- Accessibility Panel -->
+  <div class="accessibility-panel" id="accessibility-panel">
+    <button class="accessibility-close" id="accessibility-close-btn" aria-label="Close Accessibility Panel">&times;</button>
+    <h4>Accessibility Controls</h4>
+    <div class="accessibility-controls">
+      <button class="btn" id="dyslexia-toggle">Dyslexic Font</button>
+      <button class="btn" id="increase-text">Increase Text</button>
+      <button class="btn" id="decrease-text">Decrease Text</button>
+      <button class="btn" id="contrast-toggle">High Contrast</button>
+      <button class="btn" id="reading-guide-toggle">Reading Guide</button>
+      <button class="btn" id="language-toggle">Switch Language</button>
+    </div>
+  </div>
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -661,6 +682,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Accessibility JS File -->
+  <script src="assets/js/accessibility.js"></script>
 
 </body>
 
