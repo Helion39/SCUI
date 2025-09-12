@@ -47,19 +47,32 @@
     <button id="accessibility-toggle" class="accessibility-toggle" aria-label="Toggle Accessibility Options">
       <i class="bi bi-universal-access"></i>
     </button>
-    <div id="accessibility-panel" class="accessibility-panel">
-      <button id="accessibility-close" class="accessibility-close" aria-label="Close Accessibility Panel">
-        <i class="bi bi-x"></i>
-      </button>
-      <h4>Accessibility Options</h4>
-      <div class="accessibility-controls">
-        <button id="dyslexic-font" class="btn btn-sm btn-outline-primary">Dyslexia Font</button>
-        <button id="increase-text" class="btn btn-sm btn-outline-primary">A+</button>
-        <button id="decrease-text" class="btn btn-sm btn-outline-primary">A-</button>
-        <button id="high-contrast" class="btn btn-sm btn-outline-primary">High Contrast</button>
-        <button id="reading-guide" class="btn btn-sm btn-outline-primary">Reading Guide</button>
-        <button id="reset-accessibility" class="btn btn-sm btn-outline-secondary">Reset</button>
+  </div>
+  
+  <!-- Accessibility Sidebar -->
+  <div id="accessibility-overlay" class="accessibility-overlay"></div>
+  <div id="accessibility-panel" class="accessibility-panel">
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close Accessibility Panel">
+      <i class="bi bi-x"></i>
+    </button>
+    <h4>Accessibility Options</h4>
+    <div class="accessibility-controls">
+      <button id="dyslexic-font" class="btn btn-sm btn-outline-primary">Dyslexia Font</button>
+      <button id="increase-text" class="btn btn-sm btn-outline-primary">A+</button>
+      <button id="decrease-text" class="btn btn-sm btn-outline-primary">A-</button>
+      <button id="high-contrast" class="btn btn-sm btn-outline-primary">High Contrast</button>
+      <button id="reading-guide" class="btn btn-sm btn-outline-primary">Reading Guide</button>
+      
+      <!-- Language Selector -->
+      <div class="language-selector">
+        <label for="language-select" class="language-label">Language:</label>
+        <select id="language-select" class="language-dropdown">
+          <option value="id">Bahasa Indonesia</option>
+          <option value="en">English</option>
+        </select>
       </div>
+      
+      <button id="reset-accessibility" class="btn btn-sm btn-outline-secondary">Reset</button>
     </div>
   </div>
 
@@ -74,12 +87,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Beranda</a></li>
-          <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="services.html">Layanan</a></li>
-          <li><a href="projects.html">Proyek</a></li>
-          <li><a href="blog.html">Berita</a></li>
-          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html" class="active" data-translate="nav.beranda">Beranda</a></li>
+          <li><a href="about.html" data-translate="nav.tentang">Tentang Kami</a></li>
+          <li><a href="services.html" data-translate="nav.layanan">Layanan</a></li>
+          <li><a href="projects.html" data-translate="nav.proyek">Proyek</a></li>
+          <li><a href="blog.html" data-translate="nav.berita">Berita</a></li>
+          <li class="dropdown"><a href="#" data-translate="nav.lainnya"><span>Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Tim Manajemen</a></li>
               <li><a href="#">Mitra & Klien</a></li>
@@ -87,7 +100,7 @@
               <li><a href="#">Visi & Misi</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Kontak</a></li>
+          <li><a href="contact.html" data-translate="nav.kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -104,13 +117,15 @@
         <div class="container">
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-6 text-center">
-              <h2>Selamat Datang di PT. Sinergi Cahaya Utama Indah</h2>
-              <p>Sebagai pengelola harta benda wakaf produktif dari Lembaga Wakaf Nurul Taqwa (LWNT) Indosat, PT SCUI mengelola tiga kegiatan utama yaitu investasi, jasa umum (General Services), dan perdagangan umum. Didirikan sejak November 2022 dengan pengalaman bermitra dengan perusahaan BUMN untuk berbagai jenis kerjasama usaha.</p>
-              <a href="#get-started" class="btn-get-started">Pelajari Lebih Lanjut</a>
+              <h2 data-translate="hero.title">Selamat Datang di PT. Sinergi Cahaya Utama Indah</h2>
+              <p data-translate="hero.description">Sebagai pengelola harta benda wakaf produktif dari Lembaga Wakaf Nurul Taqwa (LWNT) Indosat, PT SCUI mengelola tiga kegiatan utama yaitu investasi, jasa umum (General Services), dan perdagangan umum. Didirikan sejak November 2022 dengan pengalaman bermitra dengan perusahaan BUMN untuk berbagai jenis kerjasama usaha.</p>
+              <a href="#get-started" class="btn-get-started" data-translate="hero.button">Pelajari Lebih Lanjut</a>
             </div>
           </div>
         </div>
       </div>
+
+
 
       <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -194,55 +209,6 @@
 
     </section><!-- /Get Started Section -->
 
-    <!-- What We Do Section -->
-    <section id="constructions" class="constructions section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>What We Do</h2>
-        <p>Tiga unit usaha utama PT SCUI dalam mengelola dana wakaf produktif</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item h-100">
-              <div class="card-bg"><img src="assets/img/constructions-1.jpg" alt=""></div>
-              <div class="card-body">
-                <h4 class="card-title">INVESTMENT</h4>
-                <p>Unit usaha Investasi PT SCUI fokus pada pengelolaan dana wakaf produktif dengan tujuan untuk meningkatkan nilai aset secara berkelanjutan tanpa mengurangi pokok dana wakaf. Saat ini investasi terbesar yang dijalankan SCUI adalah pada PT Kembar Jaya Abadi dalam rangka pengerjaan Mechanical Electrical pada Perusahaan BUMN, PT Kereta Api Properti Manajemen (KAPM).</p>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item h-100">
-              <div class="card-bg"><img src="assets/img/constructions-2.jpg" alt=""></div>
-              <div class="card-body">
-                <h4 class="card-title">SERVICES</h4>
-                <p>Unit usaha Services PT SCUI menyediakan berbagai layanan profesional yang mendukung kebutuhan ekosistem Lembaga Wakaf Nurul Taqwa (LWNT) dan ZIS Indosat serta mendukung kegiatan operasional usaha-usaha produktif lain. SCUI mengerjakan beberapa proyek penyaluran dana Zakat, Infaq, dan Sadaqah ZIS Indosat untuk pemberdayaan masyarakat.</p>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item h-100">
-              <div class="card-bg"><img src="assets/img/constructions-3.jpg" alt=""></div>
-              <div class="card-body">
-                <h4 class="card-title">TRADING</h4>
-                <p>Unit usaha Trading PT SCUI berfokus pada perdagangan barang dan komoditas strategis yang mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat. Trading ini meliputi berbagai sektor, termasuk distribusi produk-produk halal, barang kebutuhan pokok, serta komoditas lain yang penting bagi masyarakat Indonesia.</p>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Constructions Section -->
-
     <!-- Services Section -->
     <section id="services" class="services section light-background">
 
@@ -262,7 +228,7 @@
                 <i class="fa-solid fa-chart-line"></i>
               </div>
               <h3>Investasi</h3>
-              <p>Unit usaha Investasi PT SCUI fokus pada pengelolaan dana wakaf produktif dengan tujuan untuk meningkatkan nilai aset secara berkelanjutan. Saat ini investasi terbesar yang dijalankan SCUI adalah pada PT Kembar Jaya Abadi dalam rangka pengerjaan Mechanical Electrical pada Perusahaan BUMN, PT Kereta Api Properti Management (KAPM).</p>
+              <p>Investasi strategis pada berbagai sektor untuk meningkatkan nilai aset wakaf secara berkelanjutan tanpa mengurangi pokok dana.</p>
               <a href="#" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -273,7 +239,7 @@
                 <i class="fa-solid fa-hands-helping"></i>
               </div>
               <h3>Jasa Umum (General Services)</h3>
-              <p>Unit usaha Services PT SCUI menyediakan berbagai layanan profesional yang mendukung kebutuhan ekosistem Lembaga Wakaf Nurul Taqwa (LWNT) dan ZIS Indosat serta mendukung kegiatan operasional usaha-usaha produktif lain. Termasuk proyek penyaluran dana Zakat, Infaq, dan Sadaqah ZIS Indosat, pemberdayaan UMKM, dan program komunitas.</p>
+              <p>Layanan profesional untuk mendukung ekosistem LWNT dan ZIS Indosat, termasuk penyaluran dana sosial dan pemberdayaan UMKM.</p>
               <a href="#" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -284,7 +250,7 @@
                 <i class="fa-solid fa-truck"></i>
               </div>
               <h3>Perdagangan (Trading)</h3>
-              <p>Unit usaha Trading PT SCUI berfokus pada perdagangan barang dan komoditas strategis yang mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat. Trading ini meliputi berbagai sektor, termasuk distribusi produk-produk halal, barang kebutuhan pokok, serta komoditas lain yang penting bagi masyarakat Indonesia.</p>
+              <p>Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia.</p>
               <a href="#" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -295,6 +261,61 @@
       </div>
 
     </section><!-- /Services Section -->
+
+    <!-- What We Do Section -->
+    <section id="constructions" class="constructions section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What We Do</h2>
+        <p>Tiga unit usaha utama PT SCUI dalam mengelola dana wakaf produktif</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="card-bg">
+                <img src="assets/img/constructions-1.jpg" alt="Investment - PT SCUI" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">INVESTMENT</h4>
+                <p>Unit usaha investasi PT SCUI fokus pada pengelolaan dana wakaf produktif dengan tujuan untuk meningkatkan nilai aset secara berkelanjutan tanpa mengurangi pokok dana wakaf. Saat ini investasi terbesar yang dijalankan SCUI adalah pada PT Kembar Jaya Abadi dalam rangka pengerjaan Mechanical Electrical pada Perusahaan BUMN, PT Kereta Api Properti Manajemen (KAPM).</p>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="card-bg">
+                <img src="assets/img/constructions-2.jpg" alt="Services - PT SCUI" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">SERVICES</h4>
+                <p>Unit usaha Services PT SCUI menyediakan berbagai layanan profesional yang mendukung kebutuhan ekosistem Lembaga Wakaf Nurul Taqwa (LWNT) dan ZIS Indosat serta mendukung kegiatan operasional usaha-usaha produktif lain. SCUI mengerjakan beberapa proyek penyaluran dana Zakat, Infaq, dan Sedaqah ZIS Indosat untuk pemberdayaan masyarakat.</p>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <div class="card-bg">
+                <img src="assets/img/constructions-3.jpg" alt="Trading - PT SCUI" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">TRADING</h4>
+                <p>Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia.</p>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /What We Do Section -->
 
     <!-- Vision Mission Section -->
     <section id="alt-services" class="alt-services section">
@@ -1045,6 +1066,7 @@
       // Accessibility toolbar functionality
       const accessibilityToggle = document.getElementById('accessibility-toggle');
       const accessibilityPanel = document.getElementById('accessibility-panel');
+      const accessibilityOverlay = document.getElementById('accessibility-overlay');
       const accessibilityClose = document.getElementById('accessibility-close');
       const dyslexicFontBtn = document.getElementById('dyslexic-font');
       const increaseTextBtn = document.getElementById('increase-text');
@@ -1052,23 +1074,110 @@
       const highContrastBtn = document.getElementById('high-contrast');
       const readingGuideBtn = document.getElementById('reading-guide');
       const resetBtn = document.getElementById('reset-accessibility');
+      const languageSelect = document.getElementById('language-select');
       
       let textSize = 100;
+      let currentLanguage = localStorage.getItem('language') || 'id';
       
-      // Toggle accessibility panel
+      // Language switching functionality
+      const translations = {};
+      
+      // Load language files
+      async function loadLanguage(lang) {
+        try {
+          const response = await fetch(`assets/js/lang/${lang}.json`);
+          translations[lang] = await response.json();
+        } catch (error) {
+          console.error(`Error loading language file for ${lang}:`, error);
+        }
+      }
+      
+      // Apply translations to the page
+      function applyTranslations(lang) {
+        const t = translations[lang];
+        if (!t) return;
+        
+        // Update elements with data-translate attributes
+        document.querySelectorAll('[data-translate]').forEach(element => {
+          const key = element.getAttribute('data-translate');
+          const translation = getNestedTranslation(t, key);
+          if (translation) {
+            element.textContent = translation;
+          }
+        });
+        
+        // Update accessibility panel (without data attributes)
+        const accessibilityTitle = document.querySelector('.accessibility-panel h4');
+        if (accessibilityTitle) accessibilityTitle.textContent = t.accessibility.title;
+        
+        document.getElementById('dyslexic-font').textContent = t.accessibility.dyslexicFont;
+        document.getElementById('increase-text').textContent = t.accessibility.increaseText;
+        document.getElementById('decrease-text').textContent = t.accessibility.decreaseText;
+        document.getElementById('high-contrast').textContent = t.accessibility.highContrast;
+        document.getElementById('reading-guide').textContent = t.accessibility.readingGuide;
+        document.querySelector('.language-label').textContent = t.accessibility.language;
+        document.getElementById('reset-accessibility').textContent = t.accessibility.reset;
+        
+        // Update services section
+        const servicesTitle = document.querySelector('#services .section-title h2');
+        const servicesSubtitle = document.querySelector('#services .section-title p');
+        if (servicesTitle) servicesTitle.textContent = t.services.title;
+        if (servicesSubtitle) servicesSubtitle.textContent = t.services.subtitle;
+        
+        // Update What We Do section
+        const whatWeDoTitle = document.querySelector('#constructions .section-title h2');
+        const whatWeDoSubtitle = document.querySelector('#constructions .section-title p');
+        if (whatWeDoTitle) whatWeDoTitle.textContent = t.whatWeDo.title;
+        if (whatWeDoSubtitle) whatWeDoSubtitle.textContent = t.whatWeDo.subtitle;
+      }
+      
+      // Helper function to get nested translation
+      function getNestedTranslation(obj, path) {
+        return path.split('.').reduce((current, key) => current && current[key], obj);
+      }
+      
+      // Initialize language system
+      async function initLanguage() {
+        await loadLanguage('id');
+        await loadLanguage('en');
+        
+        languageSelect.value = currentLanguage;
+        applyTranslations(currentLanguage);
+      }
+      
+      // Language change handler
+      languageSelect.addEventListener('change', function() {
+        currentLanguage = this.value;
+        localStorage.setItem('language', currentLanguage);
+        applyTranslations(currentLanguage);
+      });
+      
+      // Initialize language system
+      initLanguage();
+      
+      // DON'T initialize the CSS variable - let it use the default fallback value
+      
+      // Toggle accessibility sidebar
       accessibilityToggle.addEventListener('click', function() {
-        accessibilityPanel.classList.toggle('show');
+        accessibilityPanel.classList.add('show');
+        accessibilityOverlay.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
       });
       
-      // Close accessibility panel
-      accessibilityClose.addEventListener('click', function() {
+      // Close accessibility sidebar
+      function closeSidebar() {
         accessibilityPanel.classList.remove('show');
-      });
+        accessibilityOverlay.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+      }
       
-      // Close panel when clicking outside
-      document.addEventListener('click', function(e) {
-        if (!accessibilityToggle.contains(e.target) && !accessibilityPanel.contains(e.target)) {
-          accessibilityPanel.classList.remove('show');
+      accessibilityClose.addEventListener('click', closeSidebar);
+      accessibilityOverlay.addEventListener('click', closeSidebar);
+      
+      // Close sidebar with Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && accessibilityPanel.classList.contains('show')) {
+          closeSidebar();
         }
       });
       
@@ -1083,8 +1192,13 @@
       increaseTextBtn.addEventListener('click', function() {
         textSize += 10;
         if (textSize <= 150) {
-          document.documentElement.style.setProperty('--content-text-size', textSize);
-          document.body.classList.add('custom-text-sizing');
+          if (textSize !== 100) {
+            document.documentElement.style.setProperty('--content-text-size', `${textSize}%`);
+            document.body.classList.add('custom-text-sizing');
+          } else {
+            document.documentElement.style.removeProperty('--content-text-size');
+            document.body.classList.remove('custom-text-sizing');
+          }
           localStorage.setItem('text-size', textSize);
         } else {
           textSize = 150;
@@ -1094,8 +1208,13 @@
       decreaseTextBtn.addEventListener('click', function() {
         textSize -= 10;
         if (textSize >= 80) {
-          document.documentElement.style.setProperty('--content-text-size', textSize);
-          document.body.classList.add('custom-text-sizing');
+          if (textSize !== 100) {
+            document.documentElement.style.setProperty('--content-text-size', `${textSize}%`);
+            document.body.classList.add('custom-text-sizing');
+          } else {
+            document.documentElement.style.removeProperty('--content-text-size');
+            document.body.classList.remove('custom-text-sizing');
+          }
           localStorage.setItem('text-size', textSize);
         } else {
           textSize = 80;
@@ -1139,6 +1258,7 @@
       // Reset all accessibility features
       resetBtn.addEventListener('click', function() {
         document.body.classList.remove('dyslexic-font', 'high-contrast', 'custom-text-sizing');
+        // Remove the CSS variable completely to use default
         document.documentElement.style.removeProperty('--content-text-size');
         if (readingGuide) {
           readingGuide.classList.remove('active');
@@ -1173,9 +1293,13 @@
       const savedTextSize = localStorage.getItem('text-size');
       if (savedTextSize) {
         textSize = parseInt(savedTextSize);
-        document.documentElement.style.setProperty('--content-text-size', textSize);
-        document.body.classList.add('custom-text-sizing');
+        if (textSize !== 100) {
+          document.documentElement.style.setProperty('--content-text-size', textSize + '%');
+          document.body.classList.add('custom-text-sizing');
+        }
+        // If savedTextSize is 100, don't set the variable - let it use default
       }
+      // If no saved text size, we start with default (no custom scaling, no CSS variable set)
       
       if (localStorage.getItem('reading-guide') === 'true') {
         if (!readingGuide) {
