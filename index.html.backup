@@ -110,53 +110,46 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="custom-hero section dark-background">
-      <!-- Background Carousel -->
-      <div class="hero-background">
-        <div class="hero-slide active" style="background-image: url('img/pelabuhan.jpg')" data-bg="img/pelabuhan.jpg">
-        </div>
-        <div class="hero-slide" style="background-image: url('img/pelabuhan_malam.jpg')" data-bg="img/pelabuhan_malam.jpg">
-        </div>
-        <div class="hero-slide" style="background-image: url('img/2orang_crate.jpeg')" data-bg="img/2orang_crate.jpeg">
-        </div>
-        <div class="hero-overlay"></div>
-      </div>
+    <section id="hero" class="hero section dark-background">
 
-      <!-- Hero Content -->
       <div class="info d-flex align-items-center">
         <div class="container">
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-6 text-center">
-              <h2 data-translate="hero.title" class="hero-title-custom">
-                Selamat Datang di<br>PT. Sinergi Cahaya Utama Indah
-              </h2>
-              <p data-translate="hero.description" class="hero-description">
-                Social Enterprenenship untuk Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.
-              </p>
-              <a href="#get-started" class="btn-get-started" data-translate="hero.button">
-                Pelajari Lebih Lanjut
-              </a>
+              <h2 data-translate="hero.title" class="hero-title-custom">Selamat Datang di<br>PT. Sinergi Cahaya Utama Indah</h2>
+              <p data-translate="hero.description">Social Enterprenenship untuk Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.</p>
+              <a href="#get-started" class="btn-get-started" data-translate="hero.button">Pelajari Lebih Lanjut</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Navigation Controls -->
-      <div class="hero-controls">
-        <button class="hero-nav-btn hero-prev" aria-label="Previous slide">
-          <i class="bi bi-chevron-left"></i>
-        </button>
-        <button class="hero-nav-btn hero-next" aria-label="Next slide">
-          <i class="bi bi-chevron-right"></i>
-        </button>
+
+
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="img/pelabuhan.jpg" alt="Pelabuhan - Infrastruktur SCUI">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/pelabuhan_malam.jpg" alt="Pelabuhan Malam - Operasional 24 Jam">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/2orang_crate.jpeg" alt="Tim SCUI - Operasional Pelabuhan">
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
       </div>
 
-      <!-- Slide Indicators -->
-      <div class="hero-indicators">
-        <button class="hero-indicator active" data-slide="0" aria-label="Go to slide 1"></button>
-        <button class="hero-indicator" data-slide="1" aria-label="Go to slide 2"></button>
-        <button class="hero-indicator" data-slide="2" aria-label="Go to slide 3"></button>
-      </div>
     </section><!-- /Hero Section -->
 
     <!-- Get Started Section -->
@@ -233,9 +226,9 @@
               <div class="icon">
                 <i class="fa-solid fa-chart-line"></i>
               </div>
-              <h3>Investasi</h3>
-              <p>Investasi strategis pada berbagai sektor untuk meningkatkan nilai aset wakaf secara berkelanjutan tanpa mengurangi pokok dana.</p>
-              <a href="#" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              <h3 data-translate="servicesDetails.investment.title">Investasi</h3>
+              <p data-translate="servicesDetails.investment.description">Investasi strategis pada berbagai sektor untuk meningkatkan nilai aset wakaf secara berkelanjutan tanpa mengurangi pokok dana.</p>
+              <a href="#" class="readmore stretched-link" data-translate="servicesDetails.investment.readMore">Selengkapnya <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -244,9 +237,9 @@
               <div class="icon">
                 <i class="fa-solid fa-hands-helping"></i>
               </div>
-              <h3>Jasa Umum (General Services)</h3>
-              <p>Layanan profesional untuk mendukung ekosistem LWNT dan ZIS Indosat, termasuk penyaluran dana sosial dan pemberdayaan UMKM.</p>
-              <a href="#" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              <h3 data-translate="servicesDetails.generalServices.title">Jasa Umum (General Services)</h3>
+              <p data-translate="servicesDetails.generalServices.description">Layanan profesional untuk mendukung ekosistem LWNT dan ZIS Indosat, termasuk penyaluran dana sosial dan pemberdayaan UMKM.</p>
+              <a href="#" class="readmore stretched-link" data-translate="servicesDetails.generalServices.readMore">Selengkapnya <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -255,9 +248,9 @@
               <div class="icon">
                 <i class="fa-solid fa-truck"></i>
               </div>
-              <h3>Perdagangan (Trading)</h3>
-              <p>Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia.</p>
-              <a href="#" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              <h3 data-translate="servicesDetails.trading.title">Perdagangan (Trading)</h3>
+              <p data-translate="servicesDetails.trading.description">Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia.</p>
+              <a href="#" class="readmore stretched-link" data-translate="servicesDetails.trading.readMore">Selengkapnya <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -287,8 +280,8 @@
                 <img src="assets/img/constructions-1.jpg" alt="Investment - PT SCUI" class="img-fluid">
               </div>
               <div class="card-body">
-                <h4 class="card-title">INVESTMENT</h4>
-                <p>Unit usaha investasi PT SCUI fokus pada pengelolaan dana wakaf produktif dengan tujuan untuk meningkatkan nilai aset secara berkelanjutan tanpa mengurangi pokok dana wakaf. Saat ini investasi terbesar yang dijalankan SCUI adalah pada PT Kembar Jaya Abadi dalam rangka pengerjaan Mechanical Electrical pada Perusahaan BUMN, PT Kereta Api Properti Manajemen (KAPM).</p>
+                <h4 class="card-title" data-translate="whatWeDoDetails.investment.title">INVESTMENT</h4>
+                <p data-translate="whatWeDoDetails.investment.description">Unit usaha investasi PT SCUI fokus pada pengelolaan dana wakaf produktif dengan tujuan untuk meningkatkan nilai aset secara berkelanjutan tanpa mengurangi pokok dana wakaf. Saat ini investasi terbesar yang dijalankan SCUI adalah pada PT Kembar Jaya Abadi dalam rangka pengerjaan Mechanical Electrical pada Perusahaan BUMN, PT Kereta Api Properti Manajemen (KAPM).</p>
               </div>
             </div>
           </div><!-- End Card Item -->
@@ -299,8 +292,8 @@
                 <img src="assets/img/constructions-2.jpg" alt="Services - PT SCUI" class="img-fluid">
               </div>
               <div class="card-body">
-                <h4 class="card-title">SERVICES</h4>
-                <p>Unit usaha Services PT SCUI menyediakan berbagai layanan profesional yang mendukung kebutuhan ekosistem Lembaga Wakaf Nurul Taqwa (LWNT) dan ZIS Indosat serta mendukung kegiatan operasional usaha-usaha produktif lain. SCUI mengerjakan beberapa proyek penyaluran dana Zakat, Infaq, dan Sedaqah ZIS Indosat untuk pemberdayaan masyarakat.</p>
+                <h4 class="card-title" data-translate="whatWeDoDetails.services.title">SERVICES</h4>
+                <p data-translate="whatWeDoDetails.services.description">Unit usaha Services PT SCUI menyediakan berbagai layanan profesional yang mendukung kebutuhan ekosistem Lembaga Wakaf Nurul Taqwa (LWNT) dan ZIS Indosat serta mendukung kegiatan operasional usaha-usaha produktif lain. SCUI mengerjakan beberapa proyek penyaluran dana Zakat, Infaq, dan Sedaqah ZIS Indosat untuk pemberdayaan masyarakat.</p>
               </div>
             </div>
           </div><!-- End Card Item -->
@@ -311,8 +304,8 @@
                 <img src="assets/img/constructions-3.jpg" alt="Trading - PT SCUI" class="img-fluid">
               </div>
               <div class="card-body">
-                <h4 class="card-title">TRADING</h4>
-                <p>Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia.</p>
+                <h4 class="card-title" data-translate="whatWeDoDetails.trading.title">TRADING</h4>
+                <p data-translate="whatWeDoDetails.trading.description">Perdagangan barang dan komoditas strategis untuk mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat Indonesia.</p>
               </div>
             </div>
           </div><!-- End Card Item -->
@@ -336,10 +329,10 @@
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-eye flex-shrink-0"></i>
               <div>
-                <p>• Menjadi Perusahaan sosial enterprise yang utama dan berdampak kebaikan pada kemanusiaan bagi Indonesia.</p>
-                <p>• Menjadi perusahaan sosial enterprise terdepan yang berkontribusi pada pemberdayaan ekonomi masyarakat melalui inovasi bisnis berkelanjutan.</p>
-                <p>• Menjadi katalis perubahan sosial dan lingkungan dengan mengoptimalkan potensi wakaf produktif secara profesional dan transparan.</p>
-                <p>• Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.</p>
+                <p data-translate="visionMission.visionContent.point1">• Menjadi Perusahaan sosial enterprise yang utama dan berdampak kebaikan pada kemanusiaan bagi Indonesia.</p>
+                <p data-translate="visionMission.visionContent.point2">• Menjadi perusahaan sosial enterprise terdepan yang berkontribusi pada pemberdayaan ekonomi masyarakat melalui inovasi bisnis berkelanjutan.</p>
+                <p data-translate="visionMission.visionContent.point3">• Menjadi katalis perubahan sosial dan lingkungan dengan mengoptimalkan potensi wakaf produktif secara profesional dan transparan.</p>
+                <p data-translate="visionMission.visionContent.point4">• Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.</p>
               </div>
             </div><!-- End Icon Box -->
 
@@ -347,10 +340,10 @@
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-bullseye flex-shrink-0"></i>
               <div>
-                <p>• Membangun organisasi sosial enterprise yang unggul dalam bidang bisnis sehingga berdampak untuk para stakeholders.</p>
-                <p>• Mengelola dana wakaf produktif secara aman dan berkelanjutan untuk memastikan pertumbuhan aset dan manfaat bagi masyarakat di masa depan.</p>
-                <p>• Menciptakan ekosistem bisnis yang berorientasi pada kesejahteraan sosial dan lingkungan tanpa mengorbankan prinsip profitabilitas.</p>
-                <p>• Membangun kemitraan strategis dengan berbagai pihak guna memperluas dampak sosial serta meningkatkan nilai bagi para pemangku kepentingan (stakeholders).</p>
+                <p data-translate="visionMission.missionContent.point1">• Membangun organisasi sosial enterprise yang unggul dalam bidang bisnis sehingga berdampak untuk para stakeholders.</p>
+                <p data-translate="visionMission.missionContent.point2">• Mengelola dana wakaf produktif secara aman dan berkelanjutan untuk memastikan pertumbuhan aset dan manfaat bagi masyarakat di masa depan.</p>
+                <p data-translate="visionMission.missionContent.point3">• Menciptakan ekosistem bisnis yang berorientasi pada kesejahteraan sosial dan lingkungan tanpa mengorbankan prinsip profitabilitas.</p>
+                <p data-translate="visionMission.missionContent.point4">• Membangun kemitraan strategis dengan berbagai pihak guna memperluas dampak sosial serta meningkatkan nilai bagi para pemangku kepentingan (stakeholders).</p>
               </div>
             </div><!-- End Icon Box -->
 
@@ -376,25 +369,25 @@
 
           <li class="nav-item col-3" role="presentation">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
-              <h4>Social Enterprise</h4>
+              <h4 data-translate="featuresDetails.socialEnterprise.title">Social Enterprise</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item col-3" role="presentation">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Wakaf Produktif</h4>
+              <h4 data-translate="featuresDetails.wakafProduktif.title">Wakaf Produktif</h4>
             </a><!-- End tab nav item -->
 
           </li>
           <li class="nav-item col-3" role="presentation">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Kemitraan BUMN</h4>
+              <h4 data-translate="featuresDetails.kemitraanBumn.title">Kemitraan BUMN</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item col-3" role="presentation">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Transparansi</h4>
+              <h4 data-translate="featuresDetails.transparansi.title">Transparansi</h4>
             </a>
           </li><!-- End tab nav item -->
 
@@ -405,14 +398,14 @@
           <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Perusahaan Social Enterprise Terdepan</h3>
-                <p class="fst-italic">
+                <h3 data-translate="featuresDetails.socialEnterprise.title">Perusahaan Social Enterprise Terdepan</h3>
+                <p class="fst-italic" data-translate="featuresDetails.socialEnterprise.subtitle">
                   PT SCUI menggabungkan profitabilitas dengan dampak sosial positif, menciptakan nilai berkelanjutan bagi semua stakeholder.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Bisnis yang mengutamakan dampak sosial dan lingkungan</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Keseimbangan antara profit dan purpose</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Inovasi bisnis berkelanjutan untuk pemberdayaan masyarakat</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.socialEnterprise.point1">Bisnis yang mengutamakan dampak sosial dan lingkungan</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.socialEnterprise.point2">Keseimbangan antara profit dan purpose</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.socialEnterprise.point3">Inovasi bisnis berkelanjutan untuk pemberdayaan masyarakat</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -424,15 +417,15 @@
           <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Pengelolaan Wakaf Produktif Profesional</h3>
-                <p class="fst-italic">
+                <h3 data-translate="featuresDetails.wakafProduktif.title">Pengelolaan Wakaf Produktif Profesional</h3>
+                <p class="fst-italic" data-translate="featuresDetails.wakafProduktif.subtitle">
                   Mengelola dana wakaf dengan prinsip amanah, transparansi, dan keberlanjutan untuk pertumbuhan aset jangka panjang.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Pengelolaan dana wakaf secara aman dan berkelanjutan</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Investasi strategis dengan pertimbangan syariah</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Peningkatan nilai aset tanpa mengurangi pokok dana wakaf</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Transparansi dan akuntabilitas penuh kepada stakeholder</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.wakafProduktif.point1">Pengelolaan dana wakaf secara aman dan berkelanjutan</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.wakafProduktif.point2">Investasi strategis dengan pertimbangan syariah</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.wakafProduktif.point3">Peningkatan nilai aset tanpa mengurangi pokok dana wakaf</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.wakafProduktif.point4">Transparansi dan akuntabilitas penuh kepada stakeholder</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -444,13 +437,13 @@
           <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Kemitraan Strategis dengan BUMN</h3>
+                <h3 data-translate="featuresDetails.kemitraanBumn.title">Kemitraan Strategis dengan BUMN</h3>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Pengalaman bermitra dengan PT Kereta Api Properti Manajemen (KAPM)</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Kerjasama dengan PT Berkah Industri Mesin Angkat (PT Pelindo)</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Rekam jejak proyek Kemenkumham dan infrastruktur nasional</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.kemitraanBumn.point1">Pengalaman bermitra dengan PT Kereta Api Properti Manajemen (KAPM)</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.kemitraanBumn.point2">Kerjasama dengan PT Berkah Industri Mesin Angkat (PT Pelindo)</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.kemitraanBumn.point3">Rekam jejak proyek Kemenkumham dan infrastruktur nasional</span></li>
                 </ul>
-                <p class="fst-italic">
+                <p class="fst-italic" data-translate="featuresDetails.kemitraanBumn.subtitle">
                   Membangun kemitraan strategis dengan BUMN dan perusahaan swasta nasional untuk memperluas dampak sosial dan ekonomi.
                 </p>
               </div>
@@ -463,14 +456,14 @@
           <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Transparansi dan Profesionalisme</h3>
-                <p class="fst-italic">
+                <h3 data-translate="featuresDetails.transparansi.title">Transparansi dan Profesionalisme</h3>
+                <p class="fst-italic" data-translate="featuresDetails.transparansi.subtitle">
                   Menjalankan operasional dengan standar tata kelola perusahaan yang baik dan akuntabilitas penuh.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Struktur manajemen yang seimbang dengan 3 komisaris dan 3 direksi</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Pengawasan strategis dan pelaksanaan operasional yang efektif</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Komitmen profesionalisme dalam menjalankan amanah wakaf produktif</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.transparansi.point1">Struktur manajemen yang seimbang dengan 3 komisaris dan 3 direksi</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.transparansi.point2">Pengawasan strategis dan pelaksanaan operasional yang efektif</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span data-translate="featuresDetails.transparansi.point3">Komitmen profesionalisme dalam menjalankan amanah wakaf produktif</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -499,11 +492,11 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Semua</li>
-            <li data-filter=".filter-investment">Investasi</li>
-            <li data-filter=".filter-services">Layanan</li>
-            <li data-filter=".filter-trading">Perdagangan</li>
-            <li data-filter=".filter-community">Komunitas</li>
+            <li data-filter="*" class="filter-active" data-translate="projectsFilter.all">Semua</li>
+            <li data-filter=".filter-investment" data-translate="projectsFilter.investment">Investasi</li>
+            <li data-filter=".filter-services" data-translate="projectsFilter.services">Layanan</li>
+            <li data-filter=".filter-trading" data-translate="projectsFilter.trading">Perdagangan</li>
+            <li data-filter=".filter-community" data-translate="projectsFilter.community">Komunitas</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -777,8 +770,8 @@
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">ZIS (Zakat Infaq Sadaqah) Indosat</h4>
-                    <p>Mengelola dana zakat, infak, dan sedekah untuk distribusi secara adil kepada mereka yang membutuhkan. Sejalan dengan tujuan sosial PT SCUI dalam pengentasan kemiskinan dan pemberdayaan masyarakat.</p>
+                    <h4 class="card-title" data-translate="ecosystem.zis.title">ZIS (Zakat Infaq Sadaqah) Indosat</h4>
+                    <p data-translate="ecosystem.zis.description">Mengelola dana zakat, infak, dan sedekah untuk distribusi secara adil kepada mereka yang membutuhkan. Sejalan dengan tujuan sosial PT SCUI dalam pengentasan kemiskinan dan pemberdayaan masyarakat.</p>
                   </div>
                 </div>
               </div>
@@ -795,8 +788,8 @@
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Masjid Nurul Taqwa (MNT)</h4>
-                    <p>Pusat kegiatan spiritual dan sosial di lingkungan Indosat. Memperkuat dimensi religius dalam ekosistem dan menggerakkan komunitas sebagai penghubung aktivitas sosial keagamaan.</p>
+                    <h4 class="card-title" data-translate="ecosystem.mnt.title">Masjid Nurul Taqwa (MNT)</h4>
+                    <p data-translate="ecosystem.mnt.description">Pusat kegiatan spiritual dan sosial di lingkungan Indosat. Memperkuat dimensi religius dalam ekosistem dan menggerakkan komunitas sebagai penghubung aktivitas sosial keagamaan.</p>
                   </div>
                 </div>
               </div>
@@ -813,8 +806,8 @@
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Bank Berkah Nurul Taqwa (BBNT)</h4>
-                    <p>Lembaga keuangan berbasis syariah yang mendukung pengelolaan dana wakaf dan keuangan syariah. Membantu pertumbuhan aset produktif dengan prinsip transparansi dan amanah.</p>
+                    <h4 class="card-title" data-translate="ecosystem.bbnt.title">Bank Berkah Nurul Taqwa (BBNT)</h4>
+                    <p data-translate="ecosystem.bbnt.description">Lembaga keuangan berbasis syariah yang mendukung pengelolaan dana wakaf dan keuangan syariah. Membantu pertumbuhan aset produktif dengan prinsip transparansi dan amanah.</p>
                   </div>
                 </div>
               </div>
@@ -831,8 +824,8 @@
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Lembaga Wakaf Nurul Taqwa (LWNT)</h4>
-                    <p>Pemegang saham mayoritas PT SCUI dan sumber dana wakaf produktif yang dikelola. Sebagai induk organisasi yang memberikan amanah pengelolaan wakaf kepada SCUI.</p>
+                    <h4 class="card-title" data-translate="ecosystem.lwnt.title">Lembaga Wakaf Nurul Taqwa (LWNT)</h4>
+                    <p data-translate="ecosystem.lwnt.description">Pemegang saham mayoritas PT SCUI dan sumber dana wakaf produktif yang dikelola. Sebagai induk organisasi yang memberikan amanah pengelolaan wakaf kepada SCUI.</p>
                   </div>
                 </div>
               </div>
@@ -863,28 +856,28 @@
 
               <div class="post-img position-relative overflow-hidden">
                 <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-                <span class="post-date">[Tanggal]</span>
+                <span class="post-date" data-translate="blog.post1.date">[Tanggal]</span>
               </div>
 
               <div class="post-content d-flex flex-column">
 
-                <h3 class="post-title">Perkembangan Proyek Investasi SCUI</h3>
+                <h3 class="post-title" data-translate="blog.post1.title">Perkembangan Proyek Investasi SCUI</h3>
 
                 <div class="meta d-flex align-items-center">
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Tim Corporate</span>
+                    <i class="bi bi-person"></i> <span class="ps-2" data-translate="blog.post1.author">Tim Corporate</span>
                   </div>
                   <span class="px-3 text-black-50">/</span>
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Investasi</span>
+                    <i class="bi bi-folder2"></i> <span class="ps-2" data-translate="blog.post1.category">Investasi</span>
                   </div>
                 </div>
 
-                <p>[Konten artikel mengenai perkembangan terbaru proyek investasi PT SCUI akan ditampilkan di sini]</p>
+                <p data-translate="blog.post1.description">[Konten artikel mengenai perkembangan terbaru proyek investasi PT SCUI akan ditampilkan di sini]</p>
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span data-translate="blog.readMore">Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -896,28 +889,28 @@
 
               <div class="post-img position-relative overflow-hidden">
                 <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-                <span class="post-date">[Tanggal]</span>
+                <span class="post-date" data-translate="blog.post2.date">[Tanggal]</span>
               </div>
 
               <div class="post-content d-flex flex-column">
 
-                <h3 class="post-title">Program Pemberdayaan Masyarakat</h3>
+                <h3 class="post-title" data-translate="blog.post2.title">Program Pemberdayaan Masyarakat</h3>
 
                 <div class="meta d-flex align-items-center">
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Tim Layanan</span>
+                    <i class="bi bi-person"></i> <span class="ps-2" data-translate="blog.post2.author">Tim Layanan</span>
                   </div>
                   <span class="px-3 text-black-50">/</span>
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Komunitas</span>
+                    <i class="bi bi-folder2"></i> <span class="ps-2" data-translate="blog.post2.category">Komunitas</span>
                   </div>
                 </div>
 
-                <p>[Artikel tentang program pemberdayaan masyarakat dan kegiatan sosial SCUI akan ditampilkan di sini]</p>
+                <p data-translate="blog.post2.description">[Artikel tentang program pemberdayaan masyarakat dan kegiatan sosial SCUI akan ditampilkan di sini]</p>
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span data-translate="blog.readMore">Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -929,28 +922,28 @@
 
               <div class="post-img position-relative overflow-hidden">
                 <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-                <span class="post-date">[Tanggal]</span>
+                <span class="post-date" data-translate="blog.post3.date">[Tanggal]</span>
               </div>
 
               <div class="post-content d-flex flex-column">
 
-                <h3 class="post-title">Laporan Kinerja Pengelolaan Wakaf</h3>
+                <h3 class="post-title" data-translate="blog.post3.title">Laporan Kinerja Pengelolaan Wakaf</h3>
 
                 <div class="meta d-flex align-items-center">
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Tim Manajemen</span>
+                    <i class="bi bi-person"></i> <span class="ps-2" data-translate="blog.post3.author">Tim Manajemen</span>
                   </div>
                   <span class="px-3 text-black-50">/</span>
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Laporan</span>
+                    <i class="bi bi-folder2"></i> <span class="ps-2" data-translate="blog.post3.category">Laporan</span>
                   </div>
                 </div>
 
-                <p>[Laporan transparansi dan akuntabilitas pengelolaan dana wakaf produktif akan ditampilkan di sini]</p>
+                <p data-translate="blog.post3.description">[Laporan transparansi dan akuntabilitas pengelolaan dana wakaf produktif akan ditampilkan di sini]</p>
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span data-translate="blog.readMore">Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -989,45 +982,45 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Link Berguna</h4>
+          <h4 data-translate="footer.usefulLinks">Link Berguna</h4>
           <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Layanan</a></li>
-            <li><a href="#">Syarat Layanan</a></li>
-            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#" data-translate="footer.links.home">Beranda</a></li>
+            <li><a href="#" data-translate="footer.links.about">Tentang Kami</a></li>
+            <li><a href="#" data-translate="footer.links.services">Layanan</a></li>
+            <li><a href="#" data-translate="footer.links.terms">Syarat Layanan</a></li>
+            <li><a href="#" data-translate="footer.links.privacy">Kebijakan Privasi</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Layanan Kami</h4>
+          <h4 data-translate="footer.ourServices">Layanan Kami</h4>
           <ul>
-            <li><a href="#">Investment</a></li>
-            <li><a href="#">General Services</a></li>
-            <li><a href="#">Trading</a></li>
-            <li><a href="#">Pengelolaan Wakaf</a></li>
-            <li><a href="#">Konsultasi Bisnis</a></li>
+            <li><a href="#" data-translate="footer.services.investment">Investment</a></li>
+            <li><a href="#" data-translate="footer.services.generalServices">General Services</a></li>
+            <li><a href="#" data-translate="footer.services.trading">Trading</a></li>
+            <li><a href="#" data-translate="footer.services.wakafManagement">Pengelolaan Wakaf</a></li>
+            <li><a href="#" data-translate="footer.services.businessConsultation">Konsultasi Bisnis</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Ekosistem</h4>
+          <h4 data-translate="footer.ecosystem">Ekosistem</h4>
           <ul>
-            <li><a href="#">Lembaga Wakaf Nurul Taqwa</a></li>
-            <li><a href="#">ZIS Indosat</a></li>
-            <li><a href="#">Masjid Nurul Taqwa</a></li>
-            <li><a href="#">Bank Berkah Nurul Taqwa</a></li>
+            <li><a href="#" data-translate="footer.ecosystem.lwnt">Lembaga Wakaf Nurul Taqwa</a></li>
+            <li><a href="#" data-translate="footer.ecosystem.zis">ZIS Indosat</a></li>
+            <li><a href="#" data-translate="footer.ecosystem.mnt">Masjid Nurul Taqwa</a></li>
+            <li><a href="#" data-translate="footer.ecosystem.bbnt">Bank Berkah Nurul Taqwa</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Proyek</h4>
+          <h4 data-translate="footer.projects">Proyek</h4>
           <ul>
-            <li><a href="#">Bandung Development</a></li>
-            <li><a href="#">Medan Infrastructure</a></li>
-            <li><a href="#">Gerobak Berkah</a></li>
-            <li><a href="#">Solar Panel PLTS</a></li>
-            <li><a href="#">Community Programs</a></li>
+            <li><a href="#" data-translate="footer.projects.bandung">Bandung Development</a></li>
+            <li><a href="#" data-translate="footer.projects.medan">Medan Infrastructure</a></li>
+            <li><a href="#" data-translate="footer.projects.gerobak">Gerobak Berkah</a></li>
+            <li><a href="#" data-translate="footer.projects.solar">Solar Panel PLTS</a></li>
+            <li><a href="#" data-translate="footer.projects.community">Community Programs</a></li>
           </ul>
         </div>
 
@@ -1062,9 +1055,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-  <!-- Hero Carousel JS -->
-  <script src="assets/js/hero-carousel.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
