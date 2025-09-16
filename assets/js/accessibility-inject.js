@@ -130,6 +130,9 @@
         if (translation) {
           if (element.tagName === 'INPUT' && element.type === 'submit') {
             element.value = translation;
+          } else if (key === 'hero.title') {
+            // Use innerHTML for hero title to allow HTML tags like <br>
+            element.innerHTML = translation;
           } else {
             element.textContent = translation;
           }
