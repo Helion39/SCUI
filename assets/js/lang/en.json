@@ -78,8 +78,24 @@
     "subtitle": "PT SCUI is proud to work with various clients and strategic partners in developing a sustainable business ecosystem"
   },
   "ecosystem": {
-    "title": "Partnership Ecosystem",
-    "subtitle": "PT SCUI is an integral part of the social-economic ecosystem in the Indosat environment that operates with sustainability and empowerment principles"
+    "title": "Ecosystem Partners",
+    "subtitle": "PT SCUI is an integral part of the socio-economic ecosystem within the Indosat environment that operates with principles of sustainability and empowerment",
+    "zis": {
+      "title": "ZIS (Zakat Infaq Sadaqah) Indosat",
+      "description": "Managing zakat, infaq, and sadaqah funds for fair distribution to those in need. In line with PT SCUI's social goals in poverty alleviation and community empowerment."
+    },
+    "mnt": {
+      "title": "Masjid Nurul Taqwa (MNT)",
+      "description": "Center of spiritual and social activities in the Indosat environment. Strengthening the religious dimension in the ecosystem and mobilizing the community as a link for religious social activities."
+    },
+    "bbnt": {
+      "title": "Bank Berkah Nurul Taqwa (BBNT)",
+      "description": "Sharia-based financial institution that supports waqf fund management and sharia finance. Helping productive asset growth with principles of transparency and trust."
+    },
+    "lwnt": {
+      "title": "Lembaga Wakaf Nurul Taqwa (LWNT)",
+      "description": "Majority shareholder of PT SCUI and source of productive waqf funds managed. As the parent organization that entrusts waqf management to SCUI."
+    }
   },
   "blog": {
     "title": "Latest News & Articles",
@@ -110,6 +126,23 @@
     }
   },
   "servicesDetails": {
+    "investment": {
+      "title": "Investment",
+      "description": "Strategic investment in various sectors to increase waqf asset value sustainably without reducing principal funds.",
+      "readMore": "Read More"
+    },
+    "generalServices": {
+      "title": "General Services",
+      "description": "Professional services to support LWNT and ZIS Indosat ecosystem, including social fund distribution and SME empowerment.",
+      "readMore": "Read More"
+    },
+    "trading": {
+      "title": "Trading",
+      "description": "Trading of strategic goods and commodities to support economic growth and community empowerment in Indonesia.",
+      "readMore": "Read More"
+    }
+  },
+  "servicesSection": {
     "investment": {
       "title": "Investment",
       "description": "Strategic investment in various sectors to increase waqf asset value sustainably without reducing principal funds.",
@@ -185,6 +218,37 @@
       "point3": "Commitment to professionalism in carrying out productive waqf trust"
     }
   },
+  "featuresContent": {
+    "socialEnterprise": {
+      "title": "Leading Social Enterprise Company",
+      "subtitle": "PT SCUI combines profitability with positive social impact, creating sustainable value for all stakeholders.",
+      "point1": "Business that prioritizes social and environmental impact",
+      "point2": "Balance between profit and purpose",
+      "point3": "Sustainable business innovation for community empowerment"
+    },
+    "wakafProduktif": {
+      "title": "Professional Productive Waqf Management",
+      "subtitle": "Managing waqf funds with principles of trust, transparency, and sustainability for long-term asset growth.",
+      "point1": "Safe and sustainable waqf fund management",
+      "point2": "Strategic investment with sharia considerations",
+      "point3": "Increasing asset value without reducing principal waqf funds",
+      "point4": "Full transparency and accountability to stakeholders"
+    },
+    "kemitraanBumn": {
+      "title": "Strategic Partnership with State-Owned Enterprises",
+      "subtitle": "Building strategic partnerships with state-owned enterprises and national private companies to expand social and economic impact.",
+      "point1": "Experience partnering with PT Kereta Api Properti Manajemen (KAPM)",
+      "point2": "Cooperation with PT Berkah Industri Mesin Angkat (PT Pelindo)",
+      "point3": "Track record of Ministry of Law and Human Rights and national infrastructure projects"
+    },
+    "transparansi": {
+      "title": "Transparency and Professionalism",
+      "subtitle": "Operating with good corporate governance standards and full accountability.",
+      "point1": "Balanced management structure with 3 commissioners and 3 directors",
+      "point2": "Effective strategic oversight and operational implementation",
+      "point3": "Commitment to professionalism in carrying out productive waqf trust"
+    }
+  },
   "projectsFilter": {
     "all": "All",
     "investment": "Investment",
@@ -192,12 +256,90 @@
     "trading": "Trading",
     "community": "Community"
   },
+  "ecosystem": {
+    "title": "Partnership Ecosystem",
+    "subtitle": "PT SCUI is an integral part of the social-economic ecosystem in the Indosat environment that operates with sustainability and empowerment principles",
+    "zis": {
+      "title": "ZIS (Zakat Infaq Sadaqah) Indosat",
+      "description": "Managing zakat, infaq, and sadaqah funds for fair distribution to those in need. In line with PT SCUI's social goals in poverty alleviation and community empowerment."
+    },
+    "mnt": {
+      "title": "Masjid Nurul Taqwa (MNT)",
+      "description": "Center of spiritual and social activities in the Indosat environment. Strengthening the religious dimension in the ecosystem and mobilizing the community as a connector of religious social activities."
+    },
+    "bbnt": {
+      "title": "Bank Berkah Nurul Taqwa (BBNT)",
+      "description": "Sharia-based financial institution that supports the management of waqf and sharia finance. Helping productive asset growth with principles of transparency and trust."
+    },
+    "lwnt": {
+      "title": "Lembaga Wakaf Nurul Taqwa (LWNT)",
+      "description": "Majority shareholder of PT SCUI and source of productive waqf funds managed. As the parent organization that provides trust in waqf management to SCUI."
+    }
+  },
+  "whatWeDoCards": {
+    "investment": {
+      "title": "INVESTMENT",
+      "description": "SCUI's investment business unit focuses on managing productive waqf funds with the aim of increasing asset value sustainably without reducing the principal waqf funds. Currently, the largest investment run by SCUI is in PT Kembar Jaya Abadi for Mechanical Electrical work at state-owned company PT Kereta Api Properti Management (KAPM)."
+    },
+    "services": {
+      "title": "SERVICES",
+      "description": "SCUI's Services business unit provides various professional services that support the ecosystem needs of Lembaga Wakaf Nurul Taqwa (LWNT) and ZIS Indosat as well as supporting the operational activities of other productive businesses. SCUI works on several projects for distributing Zakat, Infaq, and Sadaqah funds from ZIS Indosat for community empowerment."
+    },
+    "trading": {
+      "title": "TRADING",
+      "description": "Trading of strategic goods and commodities to support economic growth and empowerment of Indonesian society."
+    }
+  },
+  "visionContent": {
+    "point1": "To become the leading social enterprise company that has a positive impact on humanity for Indonesia.",
+    "point2": "To become a leading social enterprise company that contributes to community economic empowerment through sustainable business innovation.",
+    "point3": "To become a catalyst for social and environmental change by optimizing productive waqf potential professionally and transparently.",
+    "point4": "To inspire cross-sector collaboration to create positive social impact and welfare for future generations."
+  },
+  "missionContent": {
+    "point1": "Building an excellent social enterprise organization in business that has an impact on stakeholders.",
+    "point2": "Managing productive waqf funds safely and sustainably to ensure asset growth and benefits for society in the future.",
+    "point3": "Creating a business ecosystem oriented towards social and environmental welfare without sacrificing profitability principles.",
+    "point4": "Building strategic partnerships with various parties to expand social impact and increase value for stakeholders."
+  },
+  "featuresNav": {
+    "socialEnterprise": "Social Enterprise",
+    "wakafProduktif": "Productive Waqf",
+    "kemitraanBumn": "BUMN Partnership",
+    "transparansi": "Transparency"
+  },
   "footer": {
     "description": "PT. Sinergi Cahaya Utama Indah",
     "location": "Jakarta, Indonesia",
     "phone": "Phone:",
     "email": "Email:",
     "website": "Website:",
-    "copyright": "All Rights Reserved"
+    "copyright": "All Rights Reserved",
+    "usefulLinks": "Useful Links",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "ourServices": "Our Services",
+    "services": {
+      "investment": "Investment",
+      "generalServices": "General Services",
+      "trading": "Trading",
+      "wakafManagement": "Waqf Management",
+      "businessConsultation": "Business Consultation"
+    },
+    "ecosystem": "Ecosystem",
+    "ecosystemLinks": {
+      "lwnt": "Lembaga Wakaf Nurul Taqwa",
+      "zis": "ZIS Indosat",
+      "mnt": "Masjid Nurul Taqwa",
+      "bbnt": "Bank Berkah Nurul Taqwa"
+    },
+    "projects": "Projects",
+    "projectLinks": {
+      "bandung": "Bandung Development",
+      "medan": "Medan Infrastructure",
+      "gerobak": "Gerobak Berkah",
+      "solar": "Solar Panel PLTS",
+      "community": "Community Programs"
+    }
   }
 }

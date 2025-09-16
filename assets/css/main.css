@@ -416,6 +416,7 @@
   z-index: 999;
   transition: all 0.1s ease;
   display: none;
+  pointer-events: none; /* Allow clicks to pass through */
 }
 
 .reading-guide.active {
@@ -1582,6 +1583,33 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Custom Bullet Points for Vision and Mission
+--------------------------------------------------------------*/
+.alt-services .icon-box div p {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.alt-services .icon-box div p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+/* Remove the text bullet */
+.alt-services .icon-box div p {
+  text-indent: 0;
+}
+
+/*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/
 .alt-services .features-image {
@@ -1662,6 +1690,40 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Right-aligned text for Vision section only
+--------------------------------------------------------------*/
+#vision-section .col-lg-5 {
+  text-align: right;
+}
+
+#vision-section .col-lg-5 h3:after {
+  right: 0;
+  left: auto;
+}
+
+/* Right-align bullet points for Vision section only */
+#vision-section .col-lg-5 .icon-box div p {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+#vision-section .col-lg-5 .icon-box div p::before {
+  left: auto;
+  right: 0;
+}
+
+/* Fix icon positioning for right-aligned Vision section */
+#vision-section .col-lg-5 .icon-box i {
+  margin-right: 0;
+  margin-left: 25px;
+  order: 2;
+}
+
+#vision-section .col-lg-5 .icon-box div {
+  order: 1;
 }
 
 /*--------------------------------------------------------------
@@ -2341,17 +2403,41 @@ section,
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  width: 250px;
+  height: 250px;
+  aspect-ratio: 1;
 }
 
 @media (max-width: 1024px) {
   .team .member .member-img {
     margin: 0 60px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team .member .member-img {
+    margin: 0 40px;
+    width: 180px;
+    height: 180px;
   }
 }
 
 .team .member .member-img img {
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Rotate specific team member images -90 degrees (270 degrees) to correct orientation */
+.team .member .member-img img[src*="Darmawan"],
+.team .member .member-img img[src*="Wakhid Efendi"],
+.team .member .member-img img[src*="M. Saiful Hidayat"] {
+  transform: rotate(-90deg);
 }
 
 .team .member .member-img .social {
@@ -3154,7 +3240,6 @@ section,
 }
 
 .contact .info-item h3 {
-  font-size: 20px;
   font-size: 18px;
   font-weight: 700;
   margin: 10px 0;
@@ -3397,8 +3482,7 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
-}/*-------
--------------------------------------------------------
+}/*--------------------------------------------------------------
 # Get Started Section - Improved Typography
 --------------------------------------------------------------*/
 .get-started .content h3 {
@@ -3447,8 +3531,7 @@ section,
   .get-started .content p {
     font-size: 1rem !important;
   }
-}/*---
------------------------------------------------------------
+}/*--------------------------------------------------------------
 # Features Section - Improved Typography
 --------------------------------------------------------------*/
 .features .section-title h2 {
@@ -3567,8 +3650,7 @@ section,
   .services .section-title h2 {
     font-size: 1.6rem !important;
   }
-}/
-*--------------------------------------------------------------
+}/*--------------------------------------------------------------
 # Hero Section - Enhanced Typography for Updated Content
 --------------------------------------------------------------*/
 .hero .info h2 {
@@ -3597,113 +3679,11 @@ section,
     font-size: 1.1rem !important;
     margin-bottom: 1.5rem;
   }
-}/*----
-----------------------------------------------------------
-# Hero Title - Force Two Lines Layout
+}
+
+/*--------------------------------------------------------------
+# Hero Title - Minimal Fix for Two-Line Layout
 --------------------------------------------------------------*/
-.hero-title-custom {
-  max-width: 600px !important;
-  margin: 0 auto 1.5rem auto !important;
-  white-space: nowrap !important;
-}
-
-.hero-title-custom br {
-  display: block !important;
-}
-
-/* Override any responsive behavior that might break the layout */
-@media (max-width: 768px) {
-  .hero-title-custom {
-    max-width: 90% !important;
-    white-space: normal !important;
-    font-size: 2rem !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-title-custom {
-    max-width: 95% !important;
-    font-size: 1.8rem !important;
-  }
-}/*----
-----------------------------------------------------------
-# Hero Title - Two Lines Only Layout
---------------------------------------------------------------*/
-.hero-title-custom {
-  max-width: 700px !important;
-  margin: 0 auto 1.5rem auto !important;
-  word-spacing: 0.1em !important;
-  letter-spacing: 0.02em !important;
-  display: inline-block !important;
-}
-
-/* Ensure the container doesn't restrict the title */
-.hero .info .col-lg-6 {
-  max-width: 100% !important;
-}
-
-/* Override any responsive behavior */
-@media (max-width: 992px) {
-  .hero-title-custom {
-    max-width: 600px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-title-custom {
-    max-width: 90% !important;
-    font-size: 2rem !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-title-custom {
-    max-width: 95% !important;
-    font-size: 1.8rem !important;
-  }
-}/*-
--------------------------------------------------------------
-# Hero Title - Centered Two Lines Layout
---------------------------------------------------------------*/
-.hero-title-custom {
-  max-width: 700px !important;
-  margin: 0 auto 1.5rem auto !important;
-  word-spacing: 0.1em !important;
-  letter-spacing: 0.02em !important;
-  text-align: center !important;
-}
-
-/* Ensure the container doesn't restrict the title */
-.hero .info .col-lg-6 {
-  max-width: 100% !important;
-}
-
-/* Override any responsive behavior */
-@media (max-width: 992px) {
-  .hero-title-custom {
-    max-width: 600px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-title-custom {
-    max-width: 90% !important;
-    font-size: 2rem !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-title-custom {
-    max-width: 95% !important;
-    font-size: 1.8rem !important;
-  }
-}/
-*--------------------------------------------------------------
-# Hero Title Centering Fix
---------------------------------------------------------------*/
-.hero .info h2.hero-title-custom {
-  text-align: center !important;
-  max-width: 700px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+.hero .info h2 {
+  line-height: 1.2;
 }

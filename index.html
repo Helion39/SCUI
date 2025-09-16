@@ -124,7 +124,7 @@
         <div class="container">
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-6 text-center">
-              <h2 data-translate="hero.title" class="hero-title-custom">Selamat Datang di<br>PT. Sinergi Cahaya Utama Indah</h2>
+              <h2 data-translate="hero.title" class="hero-title">Selamat Datang di<br>PT. Sinergi Cahaya Utama Indah</h2>
               <p data-translate="hero.description">Social Enterprenenship untuk Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.</p>
               <a href="#get-started" class="btn-get-started" data-translate="hero.button">Pelajari Lebih Lanjut</a>
             </div>
@@ -324,8 +324,34 @@
 
     </section><!-- /What We Do Section -->
 
-    <!-- Vision Mission Section -->
-    <section id="alt-services" class="alt-services section">
+    <!-- Vision Section -->
+    <section id="vision-section" class="alt-services section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-5 d-flex flex-column justify-content-center order-lg-1" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-translate="vision.title">Vision</h3>
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-eye flex-shrink-0"></i>
+              <div>
+                <p>Menjadi Perusahaan sosial enterprise yang utama dan berdampak kebaikan pada kemanusiaan bagi Indonesia.</p>
+                <p>Menjadi perusahaan sosial enterprise terdepan yang berkontribusi pada pemberdayaan ekonomi masyarakat melalui inovasi bisnis berkelanjutan.</p>
+                <p>Menjadi katalis perubahan sosial dan lingkungan dengan mengoptimalkan potensi wakaf produktif secara profesional dan transparan.</p>
+                <p>Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+          <div class="features-image col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/alt-services.jpg" alt=""></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Vision Section -->
+
+    <!-- Mission Section -->
+    <section id="mission-section" class="alt-services section">
 
       <div class="container">
 
@@ -333,25 +359,14 @@
           <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/alt-services.jpg" alt=""></div>
 
           <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <h3 data-translate="vision.title">Vision</h3>
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-eye flex-shrink-0"></i>
-              <div>
-                <p>• Menjadi Perusahaan sosial enterprise yang utama dan berdampak kebaikan pada kemanusiaan bagi Indonesia.</p>
-                <p>• Menjadi perusahaan sosial enterprise terdepan yang berkontribusi pada pemberdayaan ekonomi masyarakat melalui inovasi bisnis berkelanjutan.</p>
-                <p>• Menjadi katalis perubahan sosial dan lingkungan dengan mengoptimalkan potensi wakaf produktif secara profesional dan transparan.</p>
-                <p>• Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.</p>
-              </div>
-            </div><!-- End Icon Box -->
-
             <h3 data-translate="mission.title">Mission</h3>
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-bullseye flex-shrink-0"></i>
               <div>
-                <p>• Membangun organisasi sosial enterprise yang unggul dalam bidang bisnis sehingga berdampak untuk para stakeholders.</p>
-                <p>• Mengelola dana wakaf produktif secara aman dan berkelanjutan untuk memastikan pertumbuhan aset dan manfaat bagi masyarakat di masa depan.</p>
-                <p>• Menciptakan ekosistem bisnis yang berorientasi pada kesejahteraan sosial dan lingkungan tanpa mengorbankan prinsip profitabilitas.</p>
-                <p>• Membangun kemitraan strategis dengan berbagai pihak guna memperluas dampak sosial serta meningkatkan nilai bagi para pemangku kepentingan (stakeholders).</p>
+                <p>Membangun organisasi sosial enterprise yang unggul dalam bidang bisnis sehingga berdampak untuk para stakeholders.</p>
+                <p>Mengelola dana wakaf produktif secara aman dan berkelanjutan untuk memastikan pertumbuhan aset dan manfaat bagi masyarakat di masa depan.</p>
+                <p>Menciptakan ekosistem bisnis yang berorientasi pada kesejahteraan sosial dan lingkungan tanpa mengorbankan prinsip profitabilitas.</p>
+                <p>Membangun kemitraan strategis dengan berbagai pihak guna memperluas dampak sosial serta meningkatkan nilai bagi para pemangku kepentingan (stakeholders).</p>
               </div>
             </div><!-- End Icon Box -->
 
@@ -360,7 +375,7 @@
 
       </div>
 
-    </section><!-- /Vision Mission Section -->
+    </section><!-- /Mission Section -->
 
     <!-- Company Highlights Section -->
     <section id="features" class="features section">
@@ -1448,9 +1463,9 @@
           if (getStartedDesc1) getStartedDesc1.textContent = getNestedTranslation(t, 'getStarted.description1') || getStartedDesc1.textContent;
           if (getStartedDesc2) getStartedDesc2.textContent = getNestedTranslation(t, 'getStarted.description2') || getStartedDesc2.textContent;
           
-          // Update Vision section
-          const visionTitle = document.querySelector('#alt-services h3:first-child');
-          const missionTitle = document.querySelector('#alt-services h3:nth-child(4)');
+          // Update Vision and Mission sections
+          const visionTitle = document.querySelector('#vision-section h3');
+          const missionTitle = document.querySelector('#mission-section h3');
           
           if (visionTitle) visionTitle.textContent = getNestedTranslation(t, 'vision.title') || "Vision";
           if (missionTitle) missionTitle.textContent = getNestedTranslation(t, 'mission.title') || "Mission";

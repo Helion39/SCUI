@@ -28,6 +28,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Dyslexia-Friendly Font -->
+  <link href="https://fonts.googleapis.com/css2?family=OpenDyslexic:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
   <!-- =======================================================
   * Template Name: UpConstruction
   * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
@@ -38,6 +41,40 @@
 </head>
 
 <body class="about-page">
+
+  <!-- Accessibility Toolbar -->
+  <div id="accessibility-toolbar" class="accessibility-toolbar">
+    <button id="accessibility-toggle" class="accessibility-toggle" aria-label="Toggle Accessibility Options">
+      <i class="bi bi-universal-access"></i>
+    </button>
+  </div>
+  
+  <!-- Accessibility Sidebar -->
+  <div id="accessibility-overlay" class="accessibility-overlay"></div>
+  <div id="accessibility-panel" class="accessibility-panel">
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close Accessibility Panel">
+      <i class="bi bi-x"></i>
+    </button>
+    <h4 data-translate="accessibility.title">Accessibility Options</h4>
+    <div class="accessibility-controls">
+      <button id="dyslexic-font" class="btn btn-sm btn-outline-primary" data-translate="accessibility.dyslexicFont">Dyslexia Font</button>
+      <button id="increase-text" class="btn btn-sm btn-outline-primary" data-translate="accessibility.increaseText">A+</button>
+      <button id="decrease-text" class="btn btn-sm btn-outline-primary" data-translate="accessibility.decreaseText">A-</button>
+      <button id="high-contrast" class="btn btn-sm btn-outline-primary" data-translate="accessibility.highContrast">High Contrast</button>
+      <button id="reading-guide" class="btn btn-sm btn-outline-primary" data-translate="accessibility.readingGuide">Reading Guide</button>
+      
+      <!-- Language Selector -->
+      <div class="language-selector">
+        <label for="language-select" class="language-label" data-translate="accessibility.language">Language:</label>
+        <select id="language-select" class="language-dropdown">
+          <option value="id">Bahasa Indonesia</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      
+      <button id="reset-accessibility" class="btn btn-sm btn-outline-secondary" data-translate="accessibility.reset">Reset</button>
+    </div>
+  </div>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -181,60 +218,38 @@
           <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/alt-services.jpg" alt=""></div>
 
           <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <h3>Visi</h3>
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-eye flex-shrink-0"></i>
-              <div>
-                <p>• Menjadi Perusahaan sosial enterprise yang utama dan berdampak kebaikan pada kemanusiaan bagi Indonesia.</p>
-                <p>• Menjadi perusahaan sosial enterprise terdepan yang berkontribusi pada pemberdayaan ekonomi masyarakat melalui inovasi bisnis berkelanjutan.</p>
-                <p>• Menjadi katalis perubahan sosial dan lingkungan dengan mengoptimalkan potensi wakaf produktif secara profesional dan transparan.</p>
-                <p>• Menginspirasi kolaborasi lintas sektor untuk menciptakan dampak sosial positif dan kesejahteraan bagi generasi mendatang.</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <h3>Misi</h3>
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-bullseye flex-shrink-0"></i>
-              <div>
-                <p>• Membangun organisasi sosial enterprise yang unggul dalam bidang bisnis sehingga berdampak untuk para stakeholders.</p>
-                <p>• Mengelola dana wakaf produktif secara aman dan berkelanjutan untuk memastikan pertumbuhan aset dan manfaat bagi masyarakat di masa depan.</p>
-                <p>• Menciptakan ekosistem bisnis yang berorientasi pada kesejahteraan sosial dan lingkungan tanpa mengorbankan prinsip profitabilitas.</p>
-                <p>• Membangun kemitraan strategis dengan berbagai pihak guna memperluas dampak sosial serta meningkatkan nilai bagi para pemangku kepentingan (stakeholders).</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-          </div>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
+            <h3>Keunggulan SCUI</h3>
+            <p>PT SCUI berpegang pada filosofi bahwa pengelolaan dana wakaf produktif harus diarahkan untuk menciptakan pertumbuhan ekonomi yang berkelanjutan, sambil tetap menjaga nilai utama amanah yang tidak boleh berkurang.</p>
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-easel flex-shrink-0"></i>
+              <i class="bi bi-graph-up-arrow flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                <h4><a href="" class="stretched-link">Investasi Strategis</a></h4>
+                <p>Mengelola dana wakaf produktif dengan fokus pada peningkatan nilai aset secara berkelanjutan tanpa mengurangi pokok dana wakaf</p>
               </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <i class="bi bi-gear flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                <h4><a href="" class="stretched-link">Layanan Profesional</a></h4>
+                <p>Menyediakan berbagai layanan profesional yang mendukung kebutuhan ekosistem LWNT dan ZIS Indosat serta usaha produktif lainnya</p>
               </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <i class="bi bi-arrow-left-right flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Dine Pad</a></h4>
-                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                <h4><a href="" class="stretched-link">Perdagangan Strategis</a></h4>
+                <p>Berfokus pada perdagangan barang dan komoditas strategis yang mendukung pertumbuhan ekonomi dan pemberdayaan masyarakat</p>
               </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <i class="bi bi-people flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Tride clov</a></h4>
-                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi</p>
+                <h4><a href="" class="stretched-link">Kemitraan BUMN & Swasta</a></h4>
+                <p>Berpengalaman bermitra dengan perusahaan BUMN maupun swasta nasional untuk berbagai jenis kerjasama usaha sejak 2022</p>
               </div>
             </div><!-- End Icon Box -->
 
@@ -253,40 +268,40 @@
         <div class="row justify-content-around gy-4">
 
           <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h3>Enim quis est voluptatibus aliquid consequatur</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
+            <h3>Mengapa Memilih SCUI?</h3>
+            <p>PT. Sinergi Cahaya Utama Indah hadir sebagai mitra terpercaya dalam mengembangkan potensi ekonomi umat melalui tiga unit bisnis yang terintegrasi dan saling mendukung untuk menciptakan ekosistem bisnis yang berkelanjutan.</p>
 
             <div class="row">
 
               <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-easel flex-shrink-0"></i>
+                <i class="bi bi-shield-check flex-shrink-0"></i>
                 <div>
-                  <h4>Lorem Ipsum</h4>
-                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias </p>
+                  <h4>Terpercaya</h4>
+                  <p>Berpengalaman bermitra dengan BUMN dan perusahaan swasta nasional sejak 2022</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <i class="bi bi-award flex-shrink-0"></i>
                 <div>
-                  <h4>Nemo Enim</h4>
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiise</p>
+                  <h4>Profesional</h4>
+                  <p>Tim manajemen berpengalaman dengan track record yang solid di berbagai sektor</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <i class="bi bi-globe flex-shrink-0"></i>
                 <div>
-                  <h4>Dine Pad</h4>
-                  <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit</p>
+                  <h4>Terintegrasi</h4>
+                  <p>Tiga unit bisnis yang saling mendukung: Investasi, Layanan, dan Perdagangan</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <i class="bi bi-heart flex-shrink-0"></i>
                 <div>
-                  <h4>Tride clov</h4>
-                  <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit</p>
+                  <h4>Berkelanjutan</h4>
+                  <p>Fokus pada pemberdayaan ekonomi umat dan pengembangan masyarakat</p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -309,8 +324,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Tim Manajemen</h2>
+        <p>Struktur manajemen yang terdiri dari komisaris dan direksi yang berkomitmen menjalankan amanah wakaf produktif dengan profesionalisme</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -319,103 +334,85 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="img/Team/Wakhid Efendi President Commissioner.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
+              <h4>Wakhid Efendi</h4>
+              <span>President Commissioner</span>
+              <p>Memimpin dewan komisaris dalam mengawasi jalannya perusahaan dan memastikan tata kelola yang baik</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <img src="img/Team/R. Roro Dwi Handayani Commissioner.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
+              <h4>R. Roro Dwi Handayani</h4>
+              <span>Commissioner</span>
+              <p>Berperan dalam pengawasan strategis dan memastikan kepatuhan terhadap regulasi perusahaan</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <img src="img/Team/M. Saiful Hidayat Commissioner.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
+              <h4>M. Saiful Hidayat</h4>
+              <span>Commissioner</span>
+              <p>Memberikan pengawasan dan arahan strategis untuk memastikan pencapaian tujuan perusahaan</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
             <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              <img src="img/Team/Juni Hadi Chief Executive Officer.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
+              <h4>Juni Hadi</h4>
+              <span>Chief Executive Officer</span>
+              <p>Memimpin visi strategis perusahaan dalam mengelola dana wakaf produktif dan mengembangkan bisnis berkelanjutan</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
             <div class="member-img">
-              <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+              <img src="img/Team/Darmawan Chief Operating Officer.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Brian Doe</h4>
-              <span>Marketing</span>
-              <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
+              <h4>Darmawan</h4>
+              <span>Chief Operating Officer</span>
+              <p>Mengawasi operasional harian perusahaan dan memastikan efektivitas pelaksanaan strategi bisnis</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
             <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              <img src="img/Team/Asyari Chief Finance Officer.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Josepha Palas</h4>
-              <span>Operation</span>
-              <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
+              <h4>Asyari</h4>
+              <span>Chief Finance Officer</span>
+              <p>Mengelola aspek keuangan perusahaan dan memastikan transparansi dalam pengelolaan dana wakaf</p>
             </div>
           </div><!-- End Team Member -->
 
@@ -661,6 +658,280 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Accessibility Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Accessibility elements
+      const accessibilityToggle = document.getElementById('accessibility-toggle');
+      const accessibilityPanel = document.getElementById('accessibility-panel');
+      const accessibilityOverlay = document.getElementById('accessibility-overlay');
+      const accessibilityClose = document.getElementById('accessibility-close');
+      const dyslexicFontBtn = document.getElementById('dyslexic-font');
+      const increaseTextBtn = document.getElementById('increase-text');
+      const decreaseTextBtn = document.getElementById('decrease-text');
+      const highContrastBtn = document.getElementById('high-contrast');
+      const readingGuideBtn = document.getElementById('reading-guide');
+      const resetBtn = document.getElementById('reset-accessibility');
+      const languageSelect = document.getElementById('language-select');
+      
+      let textSize = 100;
+      let currentLanguage = localStorage.getItem('language') || 'id';
+      let translations = {};
+      
+      // Language loading and translation functions
+      async function loadLanguage(lang) {
+        try {
+          const response = await fetch(`assets/js/lang/${lang}.json`);
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.json();
+          translations[lang] = data;
+          console.log(`Loaded ${lang} translations:`, data);
+        } catch (error) {
+          console.error(`Error loading ${lang} translations:`, error);
+        }
+      }
+      
+      function applyTranslations(lang) {
+        try {
+          const t = translations[lang];
+          if (!t) {
+            console.warn(`No translations found for language: ${lang}`);
+            return;
+          }
+          
+          // Update elements with data-translate attributes
+          document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            const translation = getNestedTranslation(t, key);
+            if (translation) {
+              element.textContent = translation;
+            }
+          });
+          
+          // Update accessibility panel (without data attributes)
+          const accessibilityTitle = document.querySelector('.accessibility-panel h4');
+          if (accessibilityTitle) accessibilityTitle.textContent = getNestedTranslation(t, 'accessibility.title') || accessibilityTitle.textContent;
+          
+          const dyslexicFontBtn = document.getElementById('dyslexic-font');
+          if (dyslexicFontBtn) dyslexicFontBtn.textContent = getNestedTranslation(t, 'accessibility.dyslexicFont') || dyslexicFontBtn.textContent;
+          
+          const increaseTextBtn = document.getElementById('increase-text');
+          if (increaseTextBtn) increaseTextBtn.textContent = getNestedTranslation(t, 'accessibility.increaseText') || increaseTextBtn.textContent;
+          
+          const decreaseTextBtn = document.getElementById('decrease-text');
+          if (decreaseTextBtn) decreaseTextBtn.textContent = getNestedTranslation(t, 'accessibility.decreaseText') || decreaseTextBtn.textContent;
+          
+          const highContrastBtn = document.getElementById('high-contrast');
+          if (highContrastBtn) highContrastBtn.textContent = getNestedTranslation(t, 'accessibility.highContrast') || highContrastBtn.textContent;
+          
+          const readingGuideBtn = document.getElementById('reading-guide');
+          if (readingGuideBtn) readingGuideBtn.textContent = getNestedTranslation(t, 'accessibility.readingGuide') || readingGuideBtn.textContent;
+          
+          const languageLabel = document.querySelector('.language-label');
+          if (languageLabel) languageLabel.textContent = getNestedTranslation(t, 'accessibility.language') || languageLabel.textContent;
+          
+          const resetBtn = document.getElementById('reset-accessibility');
+          if (resetBtn) resetBtn.textContent = getNestedTranslation(t, 'accessibility.reset') || resetBtn.textContent;
+          
+        } catch (error) {
+          console.error(`Error applying translations for ${lang}:`, error);
+        }
+      }
+      
+      // Helper function to get nested translation
+      function getNestedTranslation(obj, path) {
+        return path.split('.').reduce((current, key) => current && current[key], obj);
+      }
+      
+      // Initialize language system
+      async function initLanguage() {
+        try {
+          await Promise.all([
+            loadLanguage('id'),
+            loadLanguage('en')
+          ]);
+          
+          languageSelect.value = currentLanguage;
+          setTimeout(() => {
+            applyTranslations(currentLanguage);
+          }, 100);
+        } catch (error) {
+          console.error('Error initializing language system:', error);
+        }
+      }
+      
+      // Language change handler
+      languageSelect.addEventListener('change', function() {
+        currentLanguage = this.value;
+        localStorage.setItem('language', currentLanguage);
+        if (translations[currentLanguage]) {
+          applyTranslations(currentLanguage);
+        } else {
+          loadLanguage(currentLanguage).then(() => {
+            if (translations[currentLanguage]) {
+              applyTranslations(currentLanguage);
+            }
+          });
+        }
+      });
+      
+      // Initialize language system
+      initLanguage();
+      
+      // Toggle accessibility sidebar
+      accessibilityToggle.addEventListener('click', function() {
+        accessibilityPanel.classList.add('show');
+        accessibilityOverlay.classList.add('show');
+      });
+      
+      // Close accessibility sidebar
+      function closeSidebar() {
+        accessibilityPanel.classList.remove('show');
+        accessibilityOverlay.classList.remove('show');
+      }
+      
+      accessibilityClose.addEventListener('click', closeSidebar);
+      accessibilityOverlay.addEventListener('click', closeSidebar);
+      
+      // Close sidebar with Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && accessibilityPanel.classList.contains('show')) {
+          closeSidebar();
+        }
+      });
+      
+      // Dyslexic font toggle
+      dyslexicFontBtn.addEventListener('click', function() {
+        document.body.classList.toggle('dyslexic-font');
+        this.classList.toggle('active');
+        localStorage.setItem('dyslexic-font', document.body.classList.contains('dyslexic-font'));
+      });
+      
+      // Text size controls
+      increaseTextBtn.addEventListener('click', function() {
+        textSize += 10;
+        if (textSize <= 150) {
+          if (textSize !== 100) {
+            document.documentElement.style.setProperty('--content-text-size', textSize);
+            document.body.classList.add('custom-text-sizing');
+          } else {
+            document.documentElement.style.removeProperty('--content-text-size');
+            document.body.classList.remove('custom-text-sizing');
+          }
+          localStorage.setItem('text-size', textSize);
+        } else {
+          textSize = 150;
+        }
+      });
+      
+      decreaseTextBtn.addEventListener('click', function() {
+        textSize -= 10;
+        if (textSize >= 80) {
+          if (textSize !== 100) {
+            document.documentElement.style.setProperty('--content-text-size', textSize);
+            document.body.classList.add('custom-text-sizing');
+          } else {
+            document.documentElement.style.removeProperty('--content-text-size');
+            document.body.classList.remove('custom-text-sizing');
+          }
+          localStorage.setItem('text-size', textSize);
+        } else {
+          textSize = 80;
+        }
+      });
+      
+      // High contrast toggle
+      highContrastBtn.addEventListener('click', function() {
+        document.body.classList.toggle('high-contrast');
+        this.classList.toggle('active');
+        localStorage.setItem('high-contrast', document.body.classList.contains('high-contrast'));
+      });
+      
+      // Reading guide
+      let readingGuide;
+      readingGuideBtn.addEventListener('click', function() {
+        if (!readingGuide) {
+          readingGuide = document.createElement('div');
+          readingGuide.className = 'reading-guide';
+          document.body.appendChild(readingGuide);
+        }
+        
+        readingGuide.classList.toggle('active');
+        this.classList.toggle('active');
+        
+        if (readingGuide.classList.contains('active')) {
+          document.addEventListener('mousemove', updateReadingGuide);
+        } else {
+          document.removeEventListener('mousemove', updateReadingGuide);
+        }
+        
+        localStorage.setItem('reading-guide', readingGuide.classList.contains('active'));
+      });
+      
+      function updateReadingGuide(e) {
+        if (readingGuide && readingGuide.classList.contains('active')) {
+          readingGuide.style.top = e.clientY + 'px';
+        }
+      }
+      
+      // Reset all accessibility features
+      resetBtn.addEventListener('click', function() {
+        document.body.classList.remove('dyslexic-font', 'high-contrast', 'custom-text-sizing');
+        document.documentElement.style.removeProperty('--content-text-size');
+        if (readingGuide) {
+          readingGuide.classList.remove('active');
+          document.removeEventListener('mousemove', updateReadingGuide);
+        }
+        
+        // Remove active states
+        document.querySelectorAll('.accessibility-controls .btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        // Clear localStorage
+        localStorage.removeItem('dyslexic-font');
+        localStorage.removeItem('text-size');
+        localStorage.removeItem('high-contrast');
+        localStorage.removeItem('reading-guide');
+        
+        textSize = 100;
+      });
+      
+      // Load saved preferences
+      if (localStorage.getItem('dyslexic-font') === 'true') {
+        document.body.classList.add('dyslexic-font');
+        dyslexicFontBtn.classList.add('active');
+      }
+      
+      if (localStorage.getItem('high-contrast') === 'true') {
+        document.body.classList.add('high-contrast');
+        highContrastBtn.classList.add('active');
+      }
+      
+      const savedTextSize = localStorage.getItem('text-size');
+      if (savedTextSize) {
+        textSize = parseInt(savedTextSize);
+        if (textSize !== 100) {
+          document.documentElement.style.setProperty('--content-text-size', textSize);
+          document.body.classList.add('custom-text-sizing');
+        }
+      }
+      
+      if (localStorage.getItem('reading-guide') === 'true') {
+        if (!readingGuide) {
+          readingGuide = document.createElement('div');
+          readingGuide.className = 'reading-guide';
+          document.body.appendChild(readingGuide);
+        }
+        readingGuide.classList.add('active');
+        readingGuideBtn.classList.add('active');
+        document.addEventListener('mousemove', updateReadingGuide);
+      }
+    });
+  </script>
 
 </body>
 
