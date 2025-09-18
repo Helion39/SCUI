@@ -2007,6 +2007,52 @@ section,
   margin: 15px auto 15px auto;
 }
 
+.testimonials .testimonial-item .watch-video {
+  font-size: 18px;
+  color: var(--accent-color);
+  text-decoration: none;
+  z-index: 10;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.testimonials .testimonial-item .watch-video i {
+  font-size: 26px;
+  margin-right: 8px;
+}
+
+.testimonials .testimonial-item .watch-video:hover {
+  color: var(--heading-color);
+}
+
+.testimonials .testimonial-item .listen-audio {
+  font-size: 18px;
+  color: var(--accent-color);
+  text-decoration: none;
+  z-index: 10;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.testimonials .testimonial-item .listen-audio i {
+  font-size: 26px;
+  margin-right: 8px;
+}
+
+.testimonials .testimonial-item .listen-audio .audio-play-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.testimonials .testimonial-item .listen-audio:hover {
+  color: var(--heading-color);
+}
+
 .testimonials .swiper-wrapper {
   height: auto;
 }

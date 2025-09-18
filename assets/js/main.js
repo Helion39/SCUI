@@ -171,3 +171,36 @@
   new PureCounter();
 
 })();
+
+/**
+ * Audio testimonial functionality
+ */
+window.toggleAudio = function(audioId) {
+  const audio = document.getElementById(audioId);
+  const button = audio.previousElementSibling;
+  
+  if (audio.paused) {
+    // Pause all other audio elements
+    const allAudios = document.querySelectorAll('audio');
+    allAudios.forEach(a => {
+      if (a !== audio && !a.paused) {
+        a.pause();
+        a.currentTime = 0;
+        const btn = a.previousElementSibling;
+        btn.textContent = btn.textContent.replace('Pause', 'Listen');
+      }
+    });
+    
+    audio.play();
+    button.textContent = button.textContent.replace('Listen', 'Pause');
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+    button.textContent = button.textContent.replace('Pause', 'Listen');
+  }
+  
+  // Reset button text when audio ends
+  audio.addEventListener('ended', function() {
+    button.textContent = button.textContent.replace('Pause', 'Listen');
+  });
+}
